@@ -1,28 +1,68 @@
 $(document).ready(function () {
 
+    $('.form_slider').slick({
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        prevArrow: '<button class="arrow_form_slider arrow_form_slider_prev"><img src="images/arrow-form-slider.svg" alt=""></button>',
+        nextArrow: '<button class="arrow_form_slider arrow_form_slider_next"><img src="images/arrow-form-slider.svg" alt=""></button>',
+    });
+    
+    $('.clients_slider').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        prevArrow: '<button class="arrow_prev_client"></button>',
+        nextArrow: '<button class="arrow_next_client"><img src="images/arrow-next-client.svg" alt=""></button>',
+    });
+    
+    $('.continue_free').on('click', function () {
+        $.fancybox.close();
+        $('.progress_bar').addClass('progress_bar_active');
+        move();
+        $('.check_btn').removeClass('check_btn_active');    
+    });
+    
+    $('.user').on('click', function () {
+        $('.sidebar').addClass('sidebar_active');
+    });
+    
+    function move() {
+        var elem = document.getElementById("greenBar");
+        var percent = document.getElementById("percent");
+        var progress_bar_start = document.getElementById("progress_bar_start");
+        var progress_bar_text = document.getElementById("progress_bar_text");
+        var checker_text = document.getElementById("checker_text");
+        var width = 1;
+        var id = setInterval(frame, 100);
+        function frame() {
+            checker_text.innerHTML = '';
+            checker_text.placeholder = '';
+            if (width >= 100) {
+                clearInterval(id);
+                progress_bar_start.innerHTML = 'Done (100 %)..';
+                progress_bar_text.innerHTML = 'Your search is complete. Continue for free?';
+                $('.check_continue_btn').addClass('check_continue_btn_active');
+            } else {
+                width++;
+                elem.style.width = width + '%';          
+                percent.innerHTML = width * 1;
+            }
+        }
+    }
+
+
+    $('.notification_close').on('click', function () {
+        $('.notify').removeClass('notify_active');
+    });
+    
+    $('.checker_text').on('click', function () {
+        $('.checker_text').addClass('checker_text_active');
+    });
 
 });
 
-$('.form_slider').slick({
-    dots: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: false,
-    prevArrow: '<button class="arrow_form_slider arrow_form_slider_prev"><img src="images/arrow-form-slider.svg" alt=""></button>',
-    nextArrow: '<button class="arrow_form_slider arrow_form_slider_next"><img src="images/arrow-form-slider.svg" alt=""></button>',
-});
+// $.fancybox({
+//     overlayColor: '#000'
+// });
 
-$('.clients_slider').slick({
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    prevArrow: '<button class="arrow_prev_client"></button>',
-    nextArrow: '<button class="arrow_next_client"><img src="images/arrow-next-client.svg" alt=""></button>',
-    // responsive: [
-    //     {
-    //         breakpoint: 1301,
-    //         settings: {
-    //             arrows: false,
-    //         }
-    //     },         
-    // ]
-}); 
