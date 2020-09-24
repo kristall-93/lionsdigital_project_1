@@ -477,6 +477,10 @@
     top: -380px;
     left: -642px;
 }
+.reason_bg_mobile, 
+.reason_bg_medium{
+    display: none;
+}
 .reason_items {
     max-width: 858px;
     width: 100%;
@@ -925,6 +929,7 @@
 .app_load_btn {
     position: absolute;
     width: 291px;
+    height: 86px;
     background: #131313;
     border-radius: 23px;
     padding: 16px;
@@ -1002,9 +1007,9 @@
     }
     &.footer_item_contact {
         max-width: 280px;
-        a {
-            margin-bottom: 18px;
-        }
+        // a {
+        //     margin-bottom: 18px;
+        // }
         span {
             display: block;
         }
@@ -1012,6 +1017,9 @@
     li {
         margin-bottom: 18px;
     }
+}
+.footer_contact_add{
+    display: none;
 }
 .footer_item_title {
     font-weight: 700;
@@ -1122,6 +1130,9 @@
     letter-spacing: 0.36px;
     color: #2f3461;
     margin-bottom: 17px;
+    &:hover {
+        color: #49b444;
+    }
 }
 .login_btn {
     display: block;
@@ -1137,6 +1148,7 @@
     margin-bottom: 17px;
     outline: none;
     color: #ffffff;
+    cursor: pointer;
     &:hover {
         opacity: 0.8;
     }
