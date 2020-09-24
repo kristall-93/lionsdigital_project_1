@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
     <section class="top">
         <div class="container">
             <header class="header">
@@ -69,6 +70,7 @@
                             placeholder="Place text or upload your file here to check for plagiarism."
                             required></textarea>
                         <span class="checker_text_count">50 words remaining</span>
+                        <!-- <span class="checker_text_count checker_text_count_active checker_text_count_red">0 words remaining</span> -->
                         <div class="progress_bar">
                             <p class="progress_bar_start" id="progress_bar_start">
                                 Starting the search (<span id="percent">1</span>) %..
@@ -79,8 +81,7 @@
                             <p id="progress_bar_text">
                                 It may take a few minutes for in-depth search of your entry...
                             </p>
-                        </div>
-                        <!-- <span class="checker_text_count checker_text_count_active checker_text_count_red">0 words remaining</span> -->
+                        </div>                        
                     </div>
                     <div class="plagiarism_checker_btns">
                         <a class="upload_file_btn" href="#">
@@ -88,8 +89,10 @@
                             <span>Upload file</span>
                         </a>
                         <a class="check_btn check_btn_active" data-fancybox data-src="#modal" href="javascript:;">
-                            <img src="images/icon-search.svg" alt="">
-                            Check for plagiarism
+                            <div class="check_btn_inner">
+                                <img src="images/icon-search.svg" alt="">
+                            <span>Check for plagiarism</span>  
+                            </div>      
                         </a>
                         <a class="check_continue_btn" data-fancybox data-src="#modal-1" href="javascript:;">
                             Yes, I will continue for free
@@ -140,6 +143,7 @@
             </div>
         </div>
     </section>
+
     <section class="units_line">
         <div class="units_line_bg"></div>
         <div class="container">
@@ -345,9 +349,9 @@
                             Email support
                         </li>
                     </ul>
-                    <p class="plans_btn">
+                    <a class="plans_btn" href="#">
                         Get Started
-                    </p>
+                    </a>
                 </div>
 
                 <div class="plans_item plans_item_sale">
@@ -380,9 +384,9 @@
                             Email support
                         </li>
                     </ul>
-                    <p class="plans_btn plans_btn_active">
+                    <a class="plans_btn plans_btn_active" href="#">
                         Get Started
-                    </p>
+                    </a>
                 </div>
 
                 <div class="plans_item">
@@ -415,9 +419,9 @@
                             Email support
                         </li>
                     </ul>
-                    <p class="plans_btn">
+                    <a class="plans_btn" href="#">
                         Get Started
-                    </p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -615,12 +619,12 @@
                         Copyright plagiarized.ai 2020
                     </div>
                     <div class="footer_bottom_right">
-                        <span>
+                        <a href="#">
                             Terms of use
-                        </span>
-                        <span>
+                        </a>
+                        <a href="#">
                             Privacy Policy
-                        </span>
+                        </a>
                     </div>
                 </div>
                 <div class="footer_bg_head">
@@ -669,8 +673,6 @@
         </div>
     </div>
 
-
-
     <div class="notify notify_learn_more notify_active">
         <!-- class="notify_active" -->
         <div class="notify_top">
@@ -697,7 +699,6 @@
         </div>
         <div class="notify_learn_border"></div>
     </div>
-
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
