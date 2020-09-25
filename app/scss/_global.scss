@@ -31,6 +31,9 @@ h4,
 h5,
 h6 {
     margin: 0;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
 }
 p {
     margin: 0;
@@ -42,6 +45,7 @@ body {
     line-height: 32px;
     min-width: 320px;
     overflow-x: hidden;
+    color: #3D3E47;
 }
 .container {
     max-width: 1700px;

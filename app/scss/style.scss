@@ -1852,25 +1852,29 @@
     position: relative;
     height: 230px;
     border-radius: 5px;
-    border: 1px solid #3d3e47;
     margin-bottom: 19px;
-    &.results_top_red {
-        background: #ffc2c2;
-        border: 1px solid #f26065;
-    }
 }
-.results_top_inner{
+.results_top_inner {
     position: absolute;
     z-index: 1;
     height: 230px;
     padding: 27px 23px 31px;
-
+    border: 1px solid #3d3e47;
+    border-radius: 5px;
+    &.results_top_inner_red {
+        background-color: rgba($color: #ffc2c2, $alpha: 0.9);
+        border: 1px solid #f26065;
+    }
 }
-.result_top_red_bg{
+.result_top_red_bg {
+    display: none;
     position: absolute;
     z-index: 0;
-    bottom: -6px;
+    bottom: -7px;
     right: 0;
+    &.result_top_red_bg_active {
+        display: block;
+    }
 }
 .results_top_title {
     font-family: "Rubik", sans-serif;
@@ -1878,15 +1882,18 @@
     line-height: 56px;
     color: #f26065;
     margin-bottom: 13px;
+    display: flex;
+    align-items: center;
     img {
         margin-right: 18px;
     }
     .score {
         color: #3d3e47;
         font-weight: 500;
+        margin-right: 12px;
     }
 }
-.results_top_text{
+.results_top_text {
     height: 98px;
     overflow: hidden;
 }
@@ -1932,6 +1939,16 @@
     &.results_sources_percent_green {
         background: #d4edda;
         color: #2b612d;
+        border: none;
+    }
+    &.results_sources_percent_red {
+        background: #ffc2c2;
+        color: #f26065;
+        border: none;
+    }
+    &.results_sources_percent_yellow {
+        background: #fff3cd;
+        color: #856404;
         border: none;
     }
 }
@@ -2021,30 +2038,120 @@
     letter-spacing: 0.36px;
     color: #2f346166;
     display: flex;
-    align-items: center; 
-    margin-bottom: 17px; 
-    span{
+    align-items: center;
+    margin-bottom: 17px;
+    span {
         display: block;
     }
     &:hover {
-        opacity: .7;
+        opacity: 0.7;
     }
 }
-.results_login_with_facebook{
-    span{
+.results_login_with_facebook {
+    span {
         margin-left: 38px;
     }
 }
-.results_login_with_google{
-    span{
+.results_login_with_google {
+    span {
         margin-left: 31px;
     }
 }
-.results_login_btn{
+.results_login_btn {
     margin-top: 9px;
     margin-bottom: 0;
 }
 
 // end research_result page
+
+// start research_result - 1 page
+
+.new_check {
+    width: 214px;
+    height: 60px;
+    padding: 16px;
+    text-align: center;
+    font-size: 21px;
+    line-height: 28px;
+    color: #ffffff;
+    background: linear-gradient(180deg, #88dd8c 0%, #6cc570 100%);
+    border-radius: 15px;
+    &:hover {
+        opacity: 0.9;
+    }
+}
+.results_content_right_col {
+    max-width: 588px;
+    width: 100%;
+}
+.more_features_title {
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.more_features_item {
+    display: flex;
+    align-items: center;
+    padding: 41px 60px;
+    box-shadow: 0px 22px 51px #b1bdda29;
+    border: 1px solid #e4e6f2;
+    border-radius: 5px;
+    width: 100%;
+    height: 185px;
+    margin-bottom: 10px;
+    img {
+        margin-right: 20px;
+    }
+}
+.more_features_item_title {
+    font-weight: 700;
+    letter-spacing: 0.36px;
+    margin-bottom: 5px;
+}
+.more_features_item_text {
+    height: 67px;
+    overflow: hidden;
+}
+.more_credits {
+    margin-top: 5px;
+}
+.more_credits_title {
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.more_credits_item {
+    height: 115px;
+    box-shadow: 0px 22px 51px #b1bdda29;
+    border: 1px solid #e4e6f2;
+    border-radius: 7px;
+    padding: 22px 57px 22px 27px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    .img_box{
+        margin-right: 11px;
+        width: 81px;
+        text-align: right;
+    }
+    span{
+        font-size: 26px;
+        line-height: 59px;
+        margin-right: 92px;
+    }   
+}
+.purchase{
+    font-size: 18px;
+    line-height: 27px;
+    width: 187px;
+height: 46px;
+border: 1px solid #3D3E47;
+border-radius: 8px;
+padding: 10px 23px;
+}
+
+// end research_result - 1 page
 
 @import "_media";

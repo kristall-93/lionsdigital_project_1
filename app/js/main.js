@@ -103,5 +103,12 @@ $(document).ready(function () {
         }
     });
 
-    
+
+    if ($('.results_top_inner').hasClass('results_top_inner_red')) {
+        $(".result_top_red_bg").addClass('result_top_red_bg_active');
+    }
+
+
+
+
 });
