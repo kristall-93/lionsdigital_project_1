@@ -2,13 +2,15 @@ html {
     box-sizing: border-box;
     overflow-x: hidden;
 }
-
+html,
+body {
+    height: 100%;
+}
 *,
 *::before,
 *::after {
     box-sizing: inherit;
 }
-
 a {
     text-decoration: none;
     color: inherit;
@@ -16,14 +18,12 @@ a {
     transition: all .3s;
     cursor: pointer;
 }
-
 ul,
 li {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-
 h1,
 h2,
 h3,
@@ -32,11 +32,9 @@ h5,
 h6 {
     margin: 0;
 }
-
 p {
     margin: 0;
 }
-
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
@@ -45,9 +43,26 @@ body {
     min-width: 320px;
     overflow-x: hidden;
 }
-
 .container {
     max-width: 1700px;
+    width: 100%;
     padding: 0 30px;
     margin: 0 auto;
+}
+.container_results {
+    max-width: 1660px;
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.page_content {
+    flex: 1 0 auto;
+}
+.footer {
+    flex: 0 0 auto;
 }
