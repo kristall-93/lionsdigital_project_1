@@ -1390,6 +1390,7 @@
         }
     }
     .notify_title {
+        font-size: 19px;
         line-height: 25px;
         color: #ffffff;
         margin-bottom: 8px;
@@ -2220,7 +2221,7 @@
     font-weight: 500;
     font-size: 60px;
     line-height: 71px;
-    letter-spacing: 2.7px;
+    letter-spacing: 0.45px;
     color: #3d3e47;
     margin-bottom: 22px;
 }
@@ -2279,7 +2280,7 @@
 .get_app_bg {
     width: 44%;
     img {
-        transform: translate(-44%, 7%);
+        transform: translate(-44%, 0%);
     }
 }
 .get_app_content {

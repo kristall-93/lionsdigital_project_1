@@ -27,7 +27,7 @@
 }
 @media (max-width: 1620px) {
     .get_app_bg img {
-        transform: translate(-50%, 7%);
+        transform: translate(-50%, 0%);
     }
     .results_login_form {
         margin-left: 30px;
@@ -1948,11 +1948,6 @@
 @media (max-width: 490px) {
     .get_app_inner {
         margin-top: 5px;
-    }
-    .get_app_bg {
-        // margin-left: 0;
-        // margin-right: -40px;
-        // width: 106%;
     }
     .get_app_title {
         font-size: 25px;
