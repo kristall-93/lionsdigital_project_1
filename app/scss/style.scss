@@ -1818,7 +1818,7 @@
 
 .header_result {
     color: #3d3e47;
-    box-shadow: 0px 4px 49px #0000000a;
+    box-shadow: 0px 4px 43px #0000000a;
     margin-bottom: 53px;
     .user {
         color: #3d3e47;
@@ -1826,6 +1826,10 @@
         &:after {
             content: url(../images/arrow-down-black.svg);
         }
+    }
+    .sign_up_btn {
+        color: #3d3e47;
+        border: 1px solid #3d3e47;
     }
     a:hover {
         opacity: 0.7;
@@ -2170,13 +2174,91 @@
     border-radius: 8px;
     padding: 10px;
     text-align: center;
-    &.purchase_green{
-        background: #72CA76;
+    &.purchase_green {
+        background: #72ca76;
         border: none;
         color: #ffffff;
     }
 }
 
 // end research_result - 1 page
+
+// start 404 page
+
+.error {
+    margin-top: 125px;
+}
+.error_inner {
+    position: relative;
+}
+.error_bg {
+    position: absolute;
+    bottom: -662px;
+    left: -500px;
+}
+.error_content {
+    text-align: center;
+    max-width: 930px;
+    margin: 0 auto;
+}
+.error_numeral {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 220px;
+    line-height: 261px;
+    letter-spacing: 9.9px;
+    color: #2f346138;
+    margin-bottom: 22px;
+}
+.error_title {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 71px;
+    letter-spacing: 2.7px;
+    color: #3d3e47;
+    margin-bottom: 22px;
+}
+.error_text {
+    max-width: 820px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.45px;
+    color: #3d3e47;
+    margin: 0 auto 74px;
+}
+.error_btn_wrapper{
+    position: relative;
+    max-width: 363px;
+    width: 100%;
+    height: 80px;
+    margin: 0 auto 238px;
+
+}
+.error_btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    // max-width: 363px;
+    width: 100%;
+    height: 80px;
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: 0.33px;
+    color: #ffffff;
+    background: linear-gradient(180deg, #88dd8c 0%, #49b444 100%);
+    border-radius: 15px;
+    padding: 26px;
+    justify-content: center;
+    img {
+        margin-right: 19px;
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+}
+// end 404 page
 
 @import "_media";
