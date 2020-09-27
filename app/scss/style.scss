@@ -2325,4 +2325,87 @@
 
 // end download app page
 
+// start register page
+
+.header_result.header_register {
+    margin-bottom: 37px;
+}
+.register {
+    background-image: url(../images/404-bg.png);
+    background-size: 1032px;
+    background-repeat: no-repeat;
+    background-position: -301px 127px;
+    padding-bottom: 36px;
+    .results_creat_acc {
+        margin-bottom: 20px;
+    }
+    .results_login_form_border {
+        margin-bottom: 20px;
+    }
+    .login__email,
+    .login__pass {
+        max-width: 532px;
+    }
+    .results_login_or {
+        max-width: 428px;
+        margin: 0 auto 17px;
+    }
+    .results_login_with_wrapper {
+        max-width: 532px;
+        width: 100%;
+        display: flex;
+        margin: 0 auto 17px;
+    }
+    .results_login_with {
+        width: 260px;
+        padding: 25px;
+        justify-content: center;
+        margin-bottom: 0;
+        & + .results_login_with {
+            margin-left: 12px;
+        }
+    }
+    .results_login_with_facebook span {
+        margin-left: 30px;
+    }
+    .results_login_with_google span {
+        margin-left: 20px;
+    }
+}
+.register_inner {
+    max-width: 876px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 62px 140px;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0px 22px 51px #b1bdda29;
+    border: 1px solid #e4e6f2;
+    border-radius: 15px;
+}
+.register_title {
+    font-family: "Rubik", sans-serif;
+    font-size: 40px;
+    line-height: 47px;
+    font-weight: 500;
+    letter-spacing: 1.8px;
+    margin-bottom: 17px;
+}
+.register_links_agree {
+    font-size: 16px;
+    line-height: 21px;
+    opacity: 0.97;
+    max-width: 412px;
+    width: 100%;
+    margin: 0 auto;
+    a{
+        display: inline;
+        color: #67BC6B;
+        &:hover{
+            opacity: .7;
+        }
+    }
+}
+// end register page
+
 @import "_media";

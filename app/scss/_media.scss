@@ -896,6 +896,23 @@
     }
 }
 @media (max-width: 820px) {
+    .header_result.header_register {
+        margin-bottom: 72px;
+    }
+    .register {
+        padding-bottom: 65px;
+    }
+    .register_inner {
+        padding: 49px 47px;
+        max-width: 679px;
+    }
+    .register_title {
+        line-height: 53px;
+        letter-spacing: 0.45px;
+    }
+    .register .results_creat_acc {
+        letter-spacing: 0.15px;
+    }
     .get_app_inner {
         margin-top: 43px;
     }
@@ -1729,6 +1746,67 @@
     }
 }
 @media (max-width: 600px) {
+    .header_result.header_register {
+        margin-bottom: 31px;
+    }
+    .register_inner {
+        padding: 26px 22px;
+        max-width: 353px;
+    }
+    .register_title {
+        font-size: 21px;
+        line-height: 28px;
+        letter-spacing: 0.3px;
+        margin-bottom: 0;
+    }
+    .register .results_creat_acc {
+        font-size: 16px;
+        line-height: 21px;
+        margin-bottom: 8px;
+    }
+    .register {
+        padding-bottom: 87px;
+        background-size: 587px;
+        background-position: -213px 206px;
+        .login__email,
+        .login__pass {
+            margin-bottom: 9px;
+        }
+        .login_btn {
+            margin-bottom: 7px;
+        }
+        .results_login_or {
+            margin: 0 auto 7px;
+        }
+        .results_login_with_wrapper {
+            margin: 0 auto 12px;
+        }
+        .results_login_with {
+            width: 149px;
+            padding: 25px;
+            font-size: 19px;
+            line-height: 26px;
+            letter-spacing: 0.15px;
+            padding: 16px;
+            & + .results_login_with {
+                margin-left: 11px;
+            }
+            img {
+                height: 23px;
+            }
+        }
+        .results_login_with_facebook span {
+            margin-left: 11px;
+        }
+        .results_login_with_google span {
+            margin-left: 12px;
+        }
+    }
+    .register_links_agree {
+        font-size: 12px;
+        line-height: 16px;
+        max-width: 309px;
+    }
     .notify {
         padding: 17px 20px;
         max-width: 324px;
@@ -2082,7 +2160,14 @@
     }
 }
 @media (max-width: 370px) {
-    .footer_item.footer_item_contact {
+    .register .results_login_with {
+        font-size: 16px;
+        padding: 10px;
+        span {
+            margin-left: 8px;
+        }
+    }
+    .register .results_login_with_google .footer_item.footer_item_contact {
         max-width: 100%;
         margin-top: 30px;
     }
