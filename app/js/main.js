@@ -36,6 +36,14 @@ $(document).ready(function () {
 
     });
 
+    $('.first_login_slider').slick({
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        arrows: false,
+    });
+
     $('.continue_free').on('click', function () {
         $.fancybox.close();
         $('.progress_bar').addClass('progress_bar_active');
