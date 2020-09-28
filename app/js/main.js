@@ -116,7 +116,12 @@ $(document).ready(function () {
         $(".result_top_red_bg").addClass('result_top_red_bg_active');
     }
 
+    $('.payment_choose, .select_style').styler();
 
+
+
+
+    
 
 
 });

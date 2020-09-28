@@ -5,6 +5,12 @@
     }
 }
 @media (max-width: 1700px) {
+    .payment_form {
+        padding: 40px;
+    }
+    .payment_form_left {
+        margin-right: 40px;
+    }
     .top {
         padding-bottom: 120px;
     }
@@ -61,6 +67,33 @@
     }
 }
 @media (max-width: 1520px) {
+    .payment_content_inner {
+        flex-wrap: wrap;
+    }
+    .payment_form {
+        order: 1;
+        margin: 0 auto;
+        border-radius: 15px;
+    }
+    .order_summary_wrapper {
+        max-width: 683px;
+        margin: 0 auto 40px;
+        background-image: url(../images/order_summary_bg_medium.jpg);
+        border-radius: 15px;
+    }
+    .order_summary {
+        padding: 18px 191px 29px;
+    }
+    .order_discount {
+        padding: 27px 185px;
+    }
+    .order_summ_info {
+        padding: 19px 182px 25px;
+    }
+    .order_summary_title {
+        font-size: 40px;
+        line-height: 53px;
+    }
     .app_load_title {
         max-width: 50%;
     }
@@ -175,6 +208,38 @@
     }
     .plans_inner {
         margin: 0 auto;
+    }
+}
+@media (max-width: 1350px) {
+    .purchase_item {
+        width: 300px;
+        padding: 54px 46px;
+    }
+    .purchase_item_title {
+        margin-bottom: 12px;
+        height: 52px;
+        img {
+            transform: scale(0.8);
+            margin-right: 6px;
+        }
+        span {
+            font-size: 22px;
+            line-height: 43px;
+        }
+    }
+    .purchase_item_text {
+        font-size: 16px;
+        line-height: 20px;
+        height: 57px;
+        margin-bottom: 8px;
+    }
+    .purchase_item_btn {
+        width: 211px;
+        height: 52px;
+        border-radius: 8px;
+        padding: 16px;
+        font-size: 18px;
+        line-height: 19px;
     }
 }
 @media (max-width: 1300px) {
@@ -432,6 +497,54 @@
     }
 }
 @media (max-width: 1100px) {
+    .payment_steps_line {
+        margin-top: 62px;
+        margin-bottom: 71px;
+    }
+    .payment_step.payment_step_short {
+        max-width: 185px;
+        min-width: 185px;
+    }
+    .payment_content {
+        margin-bottom: 59px;
+    }
+    .order_summary_title {
+        letter-spacing: 0.45px;
+    }
+    .payment_form_inner {
+        flex-wrap: wrap;
+    }
+    .payment_form {
+        padding: 35px;
+    }
+    .payment_form_title {
+        text-align: center;
+        font-size: 40px;
+        line-height: 53px;
+        margin-bottom: 13px;
+    }
+    .payment_form_text {
+        text-align: center;
+    }
+    .payment_form_left {
+        max-width: 554px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .payment_form_right {
+        margin: 70px auto 0;
+    }
+    .jq-radio.payment_choose {
+        width: 265px;
+    }
+    .jq-radio.payment_choose_paypal {
+        margin-left: 18px;
+    }
+    .select_style.select_card {
+        max-width: 554px;
+        text-align: left;
+    }
+
     .header_result .header_logo {
         width: 229px;
         height: 55px;
@@ -740,6 +853,43 @@
     }
 }
 @media (max-width: 1000px) {
+    .purchase_content {
+        padding: 49px 40px 142px;
+    }
+    .purchase_title {
+        margin-bottom: 12px;
+    }
+    .purchase_title img {
+        height: 38px;
+        width: 38px;
+    }
+    .purchase_title span {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .purchase_text {
+        height: 88px;
+        overflow: hidden;
+        font-size: 17px;
+        line-height: 22px;
+        margin-bottom: 30px;
+    }
+    .purchase_inner {
+        max-width: 632px;
+        width: 100%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .purchase_item {
+        margin: 0 8px 15px;
+    }
+    .purchase_back_home {
+        margin-top: 17px;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+    }
     .reason_item_text {
         font-size: 20px;
         line-height: 26px;
@@ -909,10 +1059,19 @@
     }
 }
 @media (max-width: 820px) {
+    .purchase_inner {
+        justify-content: space-between;
+    }
+    .purchase_item {
+        margin: 0 0 15px;
+    }
     .first_login {
         padding-top: 164px;
         padding-bottom: 204px;
         background-position: -301px 256px;
+    }
+    .header_first_login .menu_list {
+        margin-left: 0;
     }
     .header_result.header_register,
     .header_result.header_login_page {
@@ -1228,6 +1387,11 @@
         margin-top: 76px;
     }
 }
+@media (max-width: 760px) {
+    .purchase_inner {
+        max-width: 300px;
+    }
+}
 @media (max-width: 750px) {
     .first_login_item .login_btn {
         border-radius: 15px;
@@ -1454,6 +1618,130 @@
     }
 }
 @media (max-width: 740px) {
+    .payment_content {
+        margin-bottom: 29px;
+    }
+    .payment_steps_line {
+        margin-top: 58px;
+        margin-bottom: 52px;
+    }
+    .payment_step {
+        &.payment_step_short {
+            max-width: 92px;
+            min-width: 92px;
+        }
+        &.payment_step_center {
+            max-width: 78px;
+            min-width: 78px;
+        }
+    }
+    .step_label {
+        top: -21px;
+        span {
+            font-size: 8px;
+            line-height: 11px;
+        }
+        img {
+            width: 15px;
+            height: 15px;
+        }
+    }
+    .order_summary {
+        padding: 27px 32px 29px;
+    }
+    .order_summary_title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .order_summary_item {
+        margin: 0 auto;
+    }
+    .order_summary_item_text {
+        letter-spacing: 0.15px;
+    }
+    .order_discount {
+        padding: 22px 17px;
+    }
+    .order_discount_form {
+        justify-content: center;
+    }
+    .order_summ_info {
+        max-width: 349px;
+        padding: 19px 19px 25px;
+        margin: 0 auto;
+    }
+    .order_summary_wrapper {
+        max-width: 683px;
+        margin: 0 auto 11px;
+    }
+    .payment_form {
+        padding: 46px 14px;
+    }
+    .payment_form_title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 6px;
+    }
+    .payment_form_text {
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.15px;
+    }
+    .payment_form_inner label {
+        letter-spacing: 0.15px;
+    }
+    .jq-radio.payment_choose {
+        max-width: 148px;
+        width: 100%;
+    }
+    .jq-radio.payment_choose_paypal {
+        margin-left: 3px;
+    }
+    .payment_choose_wrapper {
+        margin-bottom: 18px;
+    }
+    .jq-selectbox__select-text {
+        font-size: 20px;
+        line-height: 27px;
+        letter-spacing: 0.15px;
+    }
+    .card_img {
+        max-width: 311px;
+        width: 100%;
+    }
+    .payment_form_right {
+        margin: 36px auto 0;
+    }
+    .payment_form_right input {
+        width: 100%;
+        height: 68px;
+        padding: 17px 13px;
+        &::placeholder {
+            letter-spacing: 0.15px;
+        }
+    }
+    .card_date_cvv_wrapper {
+        flex-wrap: wrap;
+        margin-bottom: 18px;
+    }
+    .select_date {
+        max-width: 45%;
+    }
+    .select_date_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .card_date {
+        margin-bottom: 10px;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .card_cvv {
+        max-width: 100%;
+    }
+    .select_cvv {
+        max-width: 100%;
+    }
     .more_credits_item {
         flex-wrap: wrap;
         padding: 17px 33px;
@@ -1575,6 +1863,32 @@
     }
     .footer_bg_cloud {
         display: none;
+    }
+}
+@media (max-width: 640px) {
+    .purchase_content {
+        padding: 28px 12px 26px;
+    }
+    .purchase_title {
+        margin-bottom: 7px;
+        img {
+            height: 31px;
+            width: 31px;
+            margin-right: 8px;
+        }
+        span {
+            font-size: 25px;
+            line-height: 33px;
+        }
+    }
+    .purchase_text {
+        height: 84px;
+        font-size: 16px;
+        line-height: 21px;
+        margin-bottom: 14px;
+    }
+    .purchase_back_home {
+        margin-top: 10px;
     }
 }
 @media (max-width: 620px) {
@@ -1830,9 +2144,9 @@
             font-size: 30px;
             line-height: 40px;
             margin-bottom: 18px;
-        }        
+        }
     }
-    .register .login_page_inner .results_creat_acc{
+    .register .login_page_inner .results_creat_acc {
         margin-top: 8px;
         margin-bottom: 0;
     }
@@ -2290,6 +2604,29 @@
     }
 }
 @media (max-width: 350px) {
+    .step_label span {
+        font-size: 8px;
+    }
+    .payment_step.payment_step_short {
+        max-width: 77px;
+        min-width: 77px;
+    }
+    .order_summary {
+        padding: 27px 23px 29px;
+    }
+    .order_summary_img_box {
+        width: 103px;
+        min-width: 103px;
+        margin-right: 11px;
+    }
+
+    .purchase_content {
+        padding: 28px 0 26px;
+    }
+    .purchase_item {
+        width: 284px;
+        padding: 43px 36px;
+    }
     .reason_bg {
         height: 462px;
     }
@@ -2312,10 +2649,11 @@
         display: block !important;
     }
 }
+
 @media (min-width: 1300px) and (max-width: 1600px) {
     .container_results {
         padding: 0 70px;
-        transform-origin: top;
+        transform: scale(0.8);
         max-width: initial;
         padding: 0;
     }
@@ -2323,6 +2661,6 @@
         transform-origin: top;
     }
     .results_content {
-        margin-bottom: -20px;
+        margin-bottom: -70px;
     }
 }
