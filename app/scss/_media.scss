@@ -67,33 +67,6 @@
     }
 }
 @media (max-width: 1520px) {
-    .payment_content_inner {
-        flex-wrap: wrap;
-    }
-    .payment_form {
-        order: 1;
-        margin: 0 auto;
-        border-radius: 15px;
-    }
-    .order_summary_wrapper {
-        max-width: 683px;
-        margin: 0 auto 40px;
-        background-image: url(../images/order_summary_bg_medium.jpg);
-        border-radius: 15px;
-    }
-    .order_summary {
-        padding: 18px 191px 29px;
-    }
-    .order_discount {
-        padding: 27px 185px;
-    }
-    .order_summ_info {
-        padding: 19px 182px 25px;
-    }
-    .order_summary_title {
-        font-size: 40px;
-        line-height: 53px;
-    }
     .app_load_title {
         max-width: 50%;
     }
@@ -211,6 +184,12 @@
     }
 }
 @media (max-width: 1350px) {
+    .payment_form_left {
+        margin-right: 20px;
+    }
+    .payment_form {
+        padding: 20px;
+    }
     .purchase_item {
         width: 300px;
         padding: 54px 46px;
@@ -243,6 +222,34 @@
     }
 }
 @media (max-width: 1300px) {
+    .payment_content_inner {
+        flex-wrap: wrap;
+    }
+    .payment_form {
+        order: 1;
+        margin: 0 auto;
+        border-radius: 15px;
+        padding: 40px;
+    }
+    .order_summary_wrapper {
+        max-width: 683px;
+        margin: 0 auto 40px;
+        background-image: url(../images/order_summary_bg_medium.jpg);
+        border-radius: 15px;
+    }
+    .order_summary {
+        padding: 18px 191px 29px;
+    }
+    .order_discount {
+        padding: 27px 185px;
+    }
+    .order_summ_info {
+        padding: 19px 182px 25px;
+    }
+    .order_summary_title {
+        font-size: 40px;
+        line-height: 53px;
+    }
     .results_content_right_col {
         border-left: none;
         padding-left: 0;
@@ -2619,7 +2626,9 @@
         min-width: 103px;
         margin-right: 11px;
     }
-
+    .select_date, .select_cvv {
+        min-width: 115px;
+    }
     .purchase_content {
         padding: 28px 0 26px;
     }

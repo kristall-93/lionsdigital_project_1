@@ -2825,20 +2825,29 @@
     display: flex;
     margin-bottom: 24px;
 }
-.select_date,
-.select_cvv {
-    max-width: 178px;
-    display: inline-block;
-}
 .card_date {
     max-width: 366px;
     width: 100%;
-    min-width: 366px;
+    // min-width: 366px;
+}
+.select_date_wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 .card_cvv {
     max-width: 178px;
+    min-width: 130px;
     width: 100%;
-    margin-left: 3px;
+    margin-left: 6px;
+}
+.select_date,
+.select_cvv {
+    max-width: 178px;
+    min-width: 130px;
+    display: inline-block;
+}
+.select_date+.select_date{
+    margin-left: 6px;
 }
 .payment_btn {
     width: 100%;
@@ -2863,7 +2872,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    img{
+    img {
         margin-right: 5px;
     }
     &:hover {
@@ -2952,7 +2961,7 @@
     text-align: center;
     cursor: pointer;
     &:hover {
-        opacity: .8;
+        opacity: 0.8;
     }
     &:active {
         opacity: 1;
