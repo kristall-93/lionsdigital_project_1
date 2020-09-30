@@ -56,6 +56,12 @@
 }
 .header_line {
     z-index: 1;
+    // &.active{
+    //     display: block;
+    // }
+    // &.hidden{
+    //     display: none;
+    // }
 }
 .menu {
     display: inline-block;
@@ -2764,6 +2770,7 @@
     width: 100%;
     background: #ffffff;
     border: 1px solid #ced3ef;
+    box-shadow: none;
     border-radius: 10px;
     padding: 18px 20px;
     &:hover {
@@ -2846,7 +2853,7 @@
     min-width: 130px;
     display: inline-block;
 }
-.select_date+.select_date{
+.select_date + .select_date {
     margin-left: 6px;
 }
 .payment_btn {
@@ -3031,5 +3038,367 @@
 }
 
 // end purchase_credits-1
+
+// start plag checker registered
+
+.checker_content_inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+}
+.checker_content_left {
+    max-width: 962px;
+    width: 100%;
+}
+.checker_content_right.results_content_right_col {
+    height: 100%;
+}
+.checker_content_right .more_credits_item {
+    min-width: 560px;
+}
+.checker_title {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    line-height: 56px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    margin-bottom: 26px;
+    img {
+        height: 38px;
+        width: 38px;
+        margin-right: 20px;
+    }
+}
+.checker_registered_text_wrapper {
+    position: relative;
+}
+.checker_registered_text {
+    width: 100%;
+    height: 377px;
+    box-shadow: 0px 22px 51px #b1bdda29;
+    border: 1px solid #e4e6f2;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 23px;
+    margin-bottom: 26px;
+    &::placeholder {
+        letter-spacing: 0.36px;
+        color: #2f346166;
+        opacity: 0.34;
+    }
+    &.active {
+        height: 680px;
+    }
+}
+.checker_reg_btns {
+    display: flex;
+}
+.checker_reg_upload_btn {
+    max-width: 289px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #3d3e47;
+    border-radius: 15px;
+    margin-right: 50px;
+    img {
+        margin-right: 10px;
+    }
+    &:hover {
+        opacity: 0.7;
+    }
+}
+.checker_reg_check_btn {
+    max-width: 320px;
+    min-width: 282px;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(180deg, #88dd8c 0%, #6cc570 100%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    img {
+        height: 20px;
+        width: 20px;
+        margin-right: 13px;
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+// end plag checker registered
+
+// start setting page
+
+.header_result.header_setting {
+    margin-bottom: 0;
+}
+.settings {
+    margin-top: 45px;
+    margin-bottom: 77px;
+}
+.settings_title {
+    font-family: "Rubik", sans-serif;
+    font-size: 40px;
+    line-height: 53px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.settings_text {
+    letter-spacing: 0.36px;
+    margin-bottom: 28px;
+}
+.settings_tabs {
+    display: flex;
+    box-shadow: 0px 22px 51px #b1bdda29;
+    border: 1px solid #e4e6f2;
+    border-radius: 10px;
+}
+.tabs {
+    width: 211px;
+    padding: 35px 26px;
+    border-right: 1px solid #e4e6f2;
+}
+.tab {
+    display: flex;
+    margin-bottom: 25px;
+    img {
+        max-width: 100%;
+    }
+    span {
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0.9px;
+        color: #a2b1c3;
+    }
+    &.active {
+        span {
+            font-weight: 500;
+            color: #3d3e47;
+        }
+        .icon_tab_green {
+            display: block;
+        }
+        .icon_tab_grey {
+            display: none;
+        }
+    }
+}
+.icon_tab_green {
+    display: none;
+}
+.icon_tab_grey {
+    display: block;
+}
+.tab_icon_box {
+    width: 25px;
+    margin-right: 16px;
+    text-align: center;
+}
+.tab_content {
+    padding: 36px 84px 140px 55px;
+}
+.tab_item {
+    display: none;
+    &:first-child {
+        display: block;
+    }
+}
+.tab_item_title {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 500;
+    letter-spacing: 1.53px;
+    margin-bottom: 24px;
+}
+.tab_account_inner,
+.tab_secure_inner {
+    display: flex;
+}
+.tab_account_img {
+    width: 172px;
+    height: 173px;
+    margin-right: 55px;
+    position: relative;
+    &::after {
+        content: url(../images/icon-edit.svg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #75d179;
+        border-radius: 50%;
+        height: 42px;
+        width: 42px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+.tab_account_content_inner {
+    display: flex;
+}
+.tab_account_content_col,
+.tab_secure_content_col,
+.tab_payment_card_col,
+.tab_payment_date_col {
+    max-width: 327px;
+    width: 100%;
+    & + .tab_account_content_col {
+        margin-left: 41px;
+    }
+    label {
+        letter-spacing: 0.23px;
+        color: #a2b1c3;
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 12px;
+    }
+    input {
+        width: 100%;
+        height: 68px;
+        padding: 18px 26px;
+        border: 1px solid #ced3ef;
+        border-radius: 10px;
+        outline: none;
+        cursor: pointer;
+        margin-bottom: 38px;
+        &::placeholder {
+            letter-spacing: 0.36px;
+            color: #3d3e47;
+        }
+    }
+}
+.select_style.select_settings {
+    margin-bottom: 38px;
+}
+.tab_account_btn {
+    max-width: 327px;
+    width: 100%;
+    height: 68px;
+    padding: 18px;
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(180deg, #88dd8c 0%, #6cc570 100%);
+    border-radius: 15px;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+.tab_secure_col_verify {
+    max-width: 413px;
+    width: 100%;
+    margin-left: 41px;
+    span {
+        margin-left: 13px;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: rgba($color: #3d3e47, $alpha: 0.39);
+    }
+}
+.tab_secure_verify_title {
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 0.45px;
+}
+.tab_secure_verify_text {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    margin-bottom: 10px;
+}
+.learn_more_verify {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    img {
+        height: 17px;
+        width: 17px;
+    }
+    &:hover {
+        span {
+            transition: all 0.3s;
+            color: rgba($color: #3d3e47, $alpha: 0.8);
+        }
+    }
+}
+.two_step_verify {
+    display: flex;
+    align-items: center;
+    img {
+        height: 17px;
+        width: 17px;
+    }
+    &.active {
+        .icon_power_red {
+            display: none;
+        }
+        .icon_power_green {
+            display: block;
+        }
+    }
+}
+.icon_power_red {
+    display: block;
+}
+.icon_power_green {
+    display: none;
+}
+.two_step_verify_btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    margin-left: 23px;
+    letter-spacing: 0.15px;
+    color: #6fc873;
+    &.active {
+        color: #f26065;
+    }
+}
+.tab_item_title.tab_payment_title {
+    margin-bottom: 12px;
+}
+.tab_item_text {
+    margin-bottom: 40px;
+}
+.tab_payment_inner{
+    display: flex;
+    .tab_payment_card_col{
+        max-width: 356px;
+        margin-right: 41px;
+    }
+    .tab_payment_date_col{
+        max-width: 550px;
+    }
+    .tab_account_btn{
+        max-width: 100%;
+    }
+}
+.tab_payment_card{
+    margin-bottom: 15px;
+    
+}
+.tab_payment_card_add{
+    padding: 0 25px;
+    img{
+        width: 100%;
+    }
+}
+// .tab img svg path {
+//     stroke: #e4e6f2 !important;
+// }
+
+// end setting page
 
 @import "_media";

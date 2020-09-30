@@ -222,6 +222,20 @@
     }
 }
 @media (max-width: 1300px) {
+    .checker_content_right .more_features {
+        margin: 0;
+        border-top: none;
+        padding: 0;
+    }
+    .checker_content_right.results_content_right_col {
+        border-left: 1px solid #e4e6f2;
+        padding-left: 30px;
+        margin-left: 30px;
+        max-width: 631px;
+    }
+    .checker_reg_upload_btn {
+        margin-right: 25px;
+    }
     .payment_content_inner {
         flex-wrap: wrap;
     }
@@ -256,6 +270,7 @@
         margin-left: 0;
         max-width: 100%;
         height: 100%;
+        width: 100%;
     }
     .more_features {
         max-width: 950px;
@@ -283,9 +298,6 @@
         margin-bottom: 77px;
     }
     .results_content_right {
-        width: 100%;
-    }
-    .results_content_right_col {
         width: 100%;
     }
     .results_login_form {
@@ -374,6 +386,40 @@
     }
 }
 @media (max-width: 1220px) {
+    .checker_content_inner {
+        flex-wrap: wrap;
+        margin-top: 31px;
+        margin-bottom: 108px;
+    }
+    .checker_content_left {
+        margin: 0 auto;
+    }
+    .checker_title {
+        margin-bottom: 34px;
+    }
+    .checker_reg_upload_btn {
+        margin-right: 49px;
+    }
+    .checker_content_right.results_content_right_col {
+        border-left: none;
+        border-top: 1px solid #e4e6f2;
+        padding-left: 0;
+        padding-top: 25px;
+        margin: 40px auto 0;
+        max-width: 687px;
+    }
+    .checker_content_inner {
+        .more_features_item {
+            padding: 41px 40px 41px 36px;
+        }
+        .more_credits {
+            max-width: 687px;
+            margin: 8px auto 0;
+        }
+        .purchase {
+            width: 286px;
+        }
+    }
     .clients_slider_item {
         height: 224px;
         width: 224px !important;
@@ -1771,7 +1817,6 @@
         margin-right: 16px;
     }
     .purchase {
-        // max-width: 100%;
         width: 100%;
     }
 }
@@ -1781,6 +1826,21 @@
     }
 }
 @media (max-width: 680px) {
+    .checker_content_right .more_credits_item {
+        min-width: 290px;
+    }
+    .checker_content_inner .purchase {
+        max-width: 286px;
+        width: 100%;
+    }
+    .checker_content_inner {
+        .more_credits {
+            padding: 0;
+        }
+        .more_credits_item img {
+            margin-right: 15px;
+        }
+    }
     .sidebar {
         max-width: 295px;
         padding: 18px 12px 12px;
@@ -1899,6 +1959,67 @@
     }
 }
 @media (max-width: 620px) {
+    .checker_content_inner {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        .more_features_item {
+            padding: 14px 28px;
+        }
+    }
+    .checker_title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 15px;
+        img {
+            height: 27px;
+            width: 27px;
+            margin-right: 12px;
+        }
+    }
+    .checker_registered_text {
+        height: 233px;
+        padding: 20px 14px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        &::placeholder {
+            letter-spacing: 0.15px;
+            font-size: 17px;
+            line-height: 22px;
+        }
+    }
+    .checker_reg_upload_btn {
+        height: 51px;
+        width: 51px;
+        padding: 0px;
+        border-radius: 8px;
+        margin-right: 5px;
+        span {
+            display: none;
+        }
+        img {
+            height: 20px;
+            width: 20px;
+            margin-right: 0;
+        }
+    }
+    .checker_reg_check_btn {
+        max-width: 297px;
+        min-width: 223px;
+        height: 51px;
+        border-radius: 8px;
+        font-size: 19px;
+        line-height: 26px;
+        img {
+            height: 17px;
+            width: 17px;
+            margin-right: 10px;
+        }
+    }
+    .checker_content_right.results_content_right_col {
+        padding-top: 11px;
+        margin: 15px auto 0;
+    }
+
     .register .results_login_form_border {
         display: block;
     }
@@ -2626,7 +2747,8 @@
         min-width: 103px;
         margin-right: 11px;
     }
-    .select_date, .select_cvv {
+    .select_date,
+    .select_cvv {
         min-width: 115px;
     }
     .purchase_content {
@@ -2671,5 +2793,22 @@
     }
     .results_content {
         margin-bottom: -70px;
+    }
+}
+@media (min-width: 1300px) and (max-width: 1600px) {
+    .purchase_credits .container {
+        padding: 0 70px;
+        transform: scale(0.8);
+        max-width: initial;
+        padding: 0;
+    }
+    .purchase_credits .payment_content .container {
+        transform-origin: top;
+    }
+    .purchase_credits .payment_content {
+        margin-bottom: -50px;
+    }
+    .purchase_credits .payment_steps_line {
+        margin-bottom: 92px;
     }
 }
