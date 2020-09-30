@@ -67,6 +67,9 @@
     }
 }
 @media (max-width: 1520px) {
+    .tab_content {
+        padding: 36px 26px 140px;
+    }
     .app_load_title {
         max-width: 50%;
     }
@@ -183,6 +186,14 @@
         margin: 0 auto;
     }
 }
+@media (max-width: 1380px) {
+    .tab_account_img {
+        margin-right: 25px;
+    }
+    .tab_account_content_col + .tab_account_content_col {
+        margin-left: 20px;
+    }
+}
 @media (max-width: 1350px) {
     .payment_form_left {
         margin-right: 20px;
@@ -222,6 +233,30 @@
     }
 }
 @media (max-width: 1300px) {
+    .settings {
+        margin-top: 30px;
+        margin-bottom: 97px;
+    }
+    .settings_title {
+        font-size: 40px;
+        line-height: 53px;
+    }
+    .settings_text {
+        letter-spacing: 0.15px;
+        margin-bottom: 31px;
+    }
+    .tabs {
+        width: 83px;
+        padding: 35px 28px;
+    }
+    .tab {
+        span {
+            display: none;
+        }
+    }
+    .tab_icon_box {
+        margin-right: 0px;
+    }
     .checker_content_right .more_features {
         margin: 0;
         border-top: none;
@@ -434,6 +469,16 @@
     }
 }
 @media (max-width: 1180px) {
+    .tab_item_title {
+        letter-spacing: 0.45px;
+    }
+    .tab_account_inner {
+        flex-wrap: wrap;
+    }
+    .tab_account_img {
+        margin-right: 0px;
+        margin-bottom: 24px;
+    }
     .notify.notify_long {
         max-width: 1030px;
         .notify_long_site {
@@ -905,6 +950,33 @@
         border-radius: 10px;
     }
 }
+@media (max-width: 1020px) {
+    .tab_payment_inner{
+        flex-wrap: wrap;
+    }
+    .tab_item_title.tab_payment_title {
+        margin-bottom: 2px;
+    }
+    .tab_item_text{
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+    .tab_payment_card_col{
+        display: flex;
+    }
+    .tab_payment_inner .tab_payment_card_col {
+        max-width: 100%;
+        margin-bottom: 27px;
+    }
+    .tab_payment_card_add {
+        padding: 0;
+        margin-left: 26px;
+        display: flex;
+        align-items: center;
+    }
+
+}
 @media (max-width: 1000px) {
     .purchase_content {
         padding: 49px 40px 142px;
@@ -997,6 +1069,38 @@
     }
 }
 @media (max-width: 980px) {
+    .tab_content {
+        padding: 33px 36px 38px;
+    }
+    .tab_account_content_inner,
+    .tab_secure_inner {
+        flex-wrap: wrap;
+    }
+    .tab_account_content_col {
+        max-width: 100%;
+        & + .tab_account_content_col {
+            margin-left: 0px;
+        }
+    }
+    .tab_account_btn {
+        max-width: 100%;
+    }
+    .tab_secure_inner{
+        margin-top: 7px;
+    }
+    .tab_item_secure {
+        margin-bottom: 34px;
+    }
+    .tab_secure_content_col{
+        order: 1;
+    }
+    .tab_secure_col_verify{
+        margin-left: 0;
+        margin-bottom: 32px;        
+    }
+    .tab_secure_content_col{
+        max-width: 100%;
+    }
     .app_phone_img {
         right: 4px;
         bottom: -164px;
@@ -1959,6 +2063,97 @@
     }
 }
 @media (max-width: 620px) {
+    // .tab_item_title.tab_payment_title {
+    //     font-size: 30px;
+    //     line-height: 40px;
+    //     margin-bottom: 6px;
+    // }
+    .settings_tabs .tab_content {
+        padding: 7px 10px 30px;
+    }
+    .tab_item_text{
+        text-align: center;
+    }
+    .tab_payment_card_add{
+        max-width: 100px;
+        margin-left: 9px;
+    }
+    .tab_payment_inner .tab_payment_card_col{
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+    .tab_payment_card{
+        margin-bottom: 0;
+    }
+    .tab_payment_date_col input{
+        margin-bottom: 27px;
+    }
+
+    .tab_secure_verify_text {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .tab_secure_col_verify{
+        margin-bottom: 27px;
+        span {
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }
+    .tab_secure_content_col input{
+        margin-bottom: 21px;
+    }
+    .tab_item_secure .tab_account_btn{
+        margin-top: 6px;
+    }
+    .tab_item_secure {
+        margin-bottom: -17px;
+    }
+    .settings {
+        margin-top: 23px;
+        margin-bottom: 36px;
+    }
+    .settings_title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 6px;
+    }
+    .settings_text {
+        max-width: 200px;
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 27px;
+    }
+    .settings_tabs{
+        flex-wrap: wrap;
+    }
+    .tabs{
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #e4e6f2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 63px;
+        padding: 17px;
+    }
+    .tab{
+        margin-bottom: 0;
+        &+.tab{
+            margin-left: 27px;
+        }
+    }
+    .tab_content {
+        padding: 7px 10px 41px;
+    }
+    .tab_item_title{
+        text-align: center;
+    }
+    .tab_account_img{
+        margin: 0 auto 46px;
+    }
+
+
     .checker_content_inner {
         margin-top: 25px;
         margin-bottom: 25px;
@@ -2781,7 +2976,7 @@
     }
 }
 
-@media (min-width: 1300px) and (max-width: 1600px) {
+@media (min-width: 1300px) and (max-width: 2000px) {
     .container_results {
         padding: 0 70px;
         transform: scale(0.8);
@@ -2795,7 +2990,7 @@
         margin-bottom: -70px;
     }
 }
-@media (min-width: 1300px) and (max-width: 1600px) {
+@media (min-width: 1300px) and (max-width: 2000px) {
     .purchase_credits .container {
         padding: 0 70px;
         transform: scale(0.8);
