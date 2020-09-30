@@ -70,3 +70,12 @@ body {
 .footer {
     flex: 0 0 auto;
 }
+input,
+textarea,
+button{
+    outline: none;
+    padding: 0;
+} 
+button{
+    cursor: pointer;
+}

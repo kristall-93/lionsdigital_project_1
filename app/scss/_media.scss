@@ -951,18 +951,18 @@
     }
 }
 @media (max-width: 1020px) {
-    .tab_payment_inner{
+    .tab_payment_inner {
         flex-wrap: wrap;
     }
     .tab_item_title.tab_payment_title {
         margin-bottom: 2px;
     }
-    .tab_item_text{
+    .tab_item_text {
         font-size: 18px;
         line-height: 24px;
         margin-bottom: 24px;
     }
-    .tab_payment_card_col{
+    .tab_payment_card_col {
         display: flex;
     }
     .tab_payment_inner .tab_payment_card_col {
@@ -975,7 +975,6 @@
         display: flex;
         align-items: center;
     }
-
 }
 @media (max-width: 1000px) {
     .purchase_content {
@@ -1085,20 +1084,20 @@
     .tab_account_btn {
         max-width: 100%;
     }
-    .tab_secure_inner{
+    .tab_secure_inner {
         margin-top: 7px;
     }
     .tab_item_secure {
         margin-bottom: 34px;
     }
-    .tab_secure_content_col{
+    .tab_secure_content_col {
         order: 1;
     }
-    .tab_secure_col_verify{
+    .tab_secure_col_verify {
         margin-left: 0;
-        margin-bottom: 32px;        
+        margin-bottom: 32px;
     }
-    .tab_secure_content_col{
+    .tab_secure_content_col {
         max-width: 100%;
     }
     .app_phone_img {
@@ -2071,21 +2070,21 @@
     .settings_tabs .tab_content {
         padding: 7px 10px 30px;
     }
-    .tab_item_text{
+    .tab_item_text {
         text-align: center;
     }
-    .tab_payment_card_add{
+    .tab_payment_card_add {
         max-width: 100px;
         margin-left: 9px;
     }
-    .tab_payment_inner .tab_payment_card_col{
+    .tab_payment_inner .tab_payment_card_col {
         margin-right: 0;
         margin-bottom: 12px;
     }
-    .tab_payment_card{
+    .tab_payment_card {
         margin-bottom: 0;
     }
-    .tab_payment_date_col input{
+    .tab_payment_date_col input {
         margin-bottom: 27px;
     }
 
@@ -2093,17 +2092,17 @@
         font-size: 16px;
         line-height: 21px;
     }
-    .tab_secure_col_verify{
+    .tab_secure_col_verify {
         margin-bottom: 27px;
         span {
             font-size: 16px;
             line-height: 21px;
         }
     }
-    .tab_secure_content_col input{
+    .tab_secure_content_col input {
         margin-bottom: 21px;
     }
-    .tab_item_secure .tab_account_btn{
+    .tab_item_secure .tab_account_btn {
         margin-top: 6px;
     }
     .tab_item_secure {
@@ -2124,10 +2123,10 @@
         line-height: 20px;
         margin-bottom: 27px;
     }
-    .settings_tabs{
+    .settings_tabs {
         flex-wrap: wrap;
     }
-    .tabs{
+    .tabs {
         width: 100%;
         border-right: none;
         border-bottom: 1px solid #e4e6f2;
@@ -2137,22 +2136,21 @@
         height: 63px;
         padding: 17px;
     }
-    .tab{
+    .tab {
         margin-bottom: 0;
-        &+.tab{
+        & + .tab {
             margin-left: 27px;
         }
     }
     .tab_content {
         padding: 7px 10px 41px;
     }
-    .tab_item_title{
+    .tab_item_title {
         text-align: center;
     }
-    .tab_account_img{
+    .tab_account_img {
         margin: 0 auto 46px;
     }
-
 
     .checker_content_inner {
         margin-top: 25px;
@@ -3005,5 +3003,10 @@
     }
     .purchase_credits .payment_steps_line {
         margin-bottom: 92px;
+    }
+}
+@media (min-width: 1700px) and (max-width: 2000px) {
+    .payment_content_inner {
+        justify-content: center;
     }
 }

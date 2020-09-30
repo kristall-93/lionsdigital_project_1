@@ -189,10 +189,22 @@ $(document).ready(function () {
     //     }
     // });
 
+
+    // переключение вкладок на settings page :
     $('.settings_tabs .tab').on('click', function(event) {
         var id = $(this).attr('data-id');
         $('.settings_tabs').find('.tab_item').removeClass('active_tab').hide();
         $('.settings_tabs .tabs').find('.tab').removeClass('active');
+        $(this).addClass('active');
+        $('#' + id).addClass('active_tab').fadeIn();
+        return false;
+    });
+
+    // переключение вкладок на requests_list page :
+    $('.requests_tabs_wrapper .tab').on('click', function(event) {
+        var id = $(this).attr('data-id');
+        $('.requests_tabs_wrapper').find('.tab_item').removeClass('active_tab').hide();
+        $('.requests_tabs_wrapper .tabs').find('.tab').removeClass('active');
         $(this).addClass('active');
         $('#' + id).addClass('active_tab').fadeIn();
         return false;
