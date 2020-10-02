@@ -96,7 +96,7 @@ $(document).ready(function () {
             $("body, html").css('overflow', 'hidden');
         }
         else {
-            $("body, html").css('overflow', 'auto');
+            $("body, html").css('overflow-y', 'auto');
         }
     });
     // $(".menu_btn").click(function () {
@@ -113,7 +113,7 @@ $(document).ready(function () {
             if ($('.header_line').css('display', 'block')) {
                 $('.header_line').css('display', 'none');
             }
-            $("body, html").css('overflow', 'auto');
+            $("body, html").css('overflow-y', 'auto');
         }
     });
 
@@ -134,7 +134,7 @@ $(document).ready(function () {
                 $(".sidebar").removeClass('active');
                 $(".sidebar").addClass('hidden');
             }
-            $("body, html").css('overflow', 'auto');
+            $("body, html").css('overflow-y', 'auto');
         }
     });
 
@@ -223,6 +223,27 @@ $(document).ready(function () {
             $(".two_step_verify").addClass('active');
             // $(".two_step_verify").innerHTML = 'Two-step verification on';
         }
+    });
+
+
+    $('#grid').masonry({
+        // указываем элемент-контейнер в котором расположены блоки для динамической верстки
+        itemSelector: '.item',
+        // указываем класс элемента являющегося блоком в нашей сетке
+        singleMode: true,
+        // true - если у вас все блоки одинаковой ширины
+        isResizable: true,
+        // перестраивает блоки при изменении размеров окна
+        isAnimated: true,
+        // анимируем перестроение блоков
+        animationOptions: {
+            queue: false,
+            duration: 500
+        },
+        // опции анимации - очередь и продолжительность анимации
+        // fitWidth: true,
+        // columnWidth: 398 px,
+        // horizontalOrder: true,
     });
 
 

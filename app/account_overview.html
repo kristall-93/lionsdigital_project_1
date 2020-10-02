@@ -19,13 +19,37 @@
     <div class="wrapper">
         <div class="page_content">
 
-            <header class="header_result">
+            <header class="header_result header_overview">
                 <div class="container">
                     <div class="header_inner">
                         <a class="header_logo">
                             <img src="images/logo.png" alt="#">
                         </a>
                         <div class="header_line">
+                            <nav class="menu">
+                                <ul class="menu_list">
+                                    <li>
+                                        <a href="#">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Pricing
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Plagiarism Checker
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Credits
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
                             <a class="user" href="#">
                                 Hello, John
                             </a>
@@ -39,108 +63,141 @@
                 </div>
             </header>
 
-            <section class="checker_registered_content">
+            <section class="overview">
                 <div class="container">
-                    <div class="checker_content_inner">
-                        <div class="checker_content_left">
-                            <h2 class="checker_title">
-                                <img src="images/icon-search-green.svg" alt="#">
-                                <span>Plagiarism Checker</span>
-                            </h2>
-                            <form class="checker_registered_form">
-                                <div class="checker_registered_text_wrapper">
-                                     <textarea class="checker_registered_text" id="checker_registered_text" 
-                                    placeholder="Place your text here." required></textarea>
-                                    <div class="progress_bar">
-                                        <p class="progress_bar_start" id="progress_bar_start">
-                                            Search in progress (<span id="percent">1</span> %)..
-                                        </p>
-                                        <div id="greyProgress">
-                                            <div id="greenBar"></div>
+                    <h1 class="overview_title">
+                        Overview
+                    </h1>
+                    <p class="overview_text">
+                        Lorem ipsum dolor sit amet, consetetur.
+                    </p>
+
+                    <div class="overview_grid">
+
+                        <div class="overview_item overview_user">
+                            <div class="tab_account_img">
+                                <img src="images/user-img-setting.png" alt="#">
+                            </div>
+                            <div class="overview_user_name">
+                                <span>John S.</span>
+                                <a class="overview_user_name_edit" href="#">
+                                    <img class="edit_icon_black" src="images/icon-edit-black.svg" alt="#">
+                                    <img class="edit_icon_white" src="images/icon-edit.svg" alt="#">
+                                </a>
+                            </div>
+                            <div class="overview_user_geo">
+                                <span>Subotica, Serbia</span>
+                                <a href="#">
+                                    <img src="images/icon-map.svg" alt="#">
+                                </a>
+                            </div>
+                            <div class="overview_user_label">EMAIL</div>
+                            <div class="overview_user_date">johnsmith@email.com</div>
+                            <div class="overview_user_label">BIRTH DATE</div>
+                            <div class="overview_user_date">16.01.1991</div>
+                            <div class="overview_user_label">GENDER</div>
+                            <div class="overview_user_date">Male</div>
+                            <div class="upgrate_box_wrapper">
+                                <div class="upgrate_box">
+                                    <img src="images/logo-head.png" alt="#">
+                                    <div class="upgrate_box_inner">
+                                        <div class="upgrate_box_title">
+                                            Upgrade to Premium
                                         </div>
-                                        <p id="progress_bar_text">
-                                            Your results wil be available in 2 minutes.
-                                        </p>
+                                        <div class="upgrate_box_text">
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod…
+                                        </div>
+                                        <a class="upgrate_box_btn" href="#">
+                                            Upgrade now
+                                        </a>
+                                    </div>
+                                    <div class="upgrate_box_bg">
+                                        P
                                     </div>
                                 </div>
-                               
-                                <div class="checker_reg_btns">
-                                    <a class="checker_reg_upload_btn" href="#">
-                                        <img src="images/icon-upload_black.svg" alt="#">
-                                        <span>Upload file</span>
-                                    </a>
-                                    <button class="checker_reg_check_btn" type="submit">
-                                        <img src="images/icon-search.svg" alt="#">
-                                        <span>Check for plagiarism</span>
-                                    </button>
-                                </div>
-                            </form>
+                            </div>
                         </div>
 
-                        <div class="results_content_right_col checker_content_right">
-                            <div class="more_features">
-                                <h5 class="more_features_title">
-                                    Check out more features
-                                </h5>
-                                <a class="more_features_item" href="#">
-                                    <img src="images/more_features-1.svg" alt="#">
-                                    <div class="more_features_item_box">
-                                        <h6 class="more_features_item_title">
-                                            Purchase Tailored Content
-                                        </h6>
-                                        <p class="more_features_item_text">
-                                            Tether is ideal when it comes to paying bills on digital markets, and
-                                            exchange platforms like OKEx is at your service for efficient exchanges.
-                                            This pave way for assets like Basic Attention Token as one of numerous pairs
-                                            of USDT.
-                                        </p>
-                                    </div>
-                                </a>
-                                <a class="more_features_item" href="#">
-                                    <img src="images/more_features-2.svg" alt="#">
-                                    <div class="more_features_item_box">
-                                        <h6 class="more_features_item_title">
-                                            Purchase Tailored Content
-                                        </h6>
-                                        <p class="more_features_item_text">
-                                            Tether is ideal when it comes to paying bills on digital markets, and
-                                            exchange platforms like OKEx is at your service for efficient exchanges.
-                                            This pave way for assets like Basic Attention Token as one of numerous pairs
-                                            of USDT.
-                                        </p>
-                                    </div>
-                                </a>
+                        <div class="overview_item overview_tools_checker overview_item_hover">
+                                <div class="overview_tools_item_inner">
+                                <img class="overview_icon_black" src="images/icon-search-big.svg" alt="#">
+                                <img class="overview_icon_white" src="images/icon-search-big-white.svg" alt="#">
+                                <p>Plagiarism checker</p>
                             </div>
-                            <div class="more_credits">
-                                <div class="more_credits_title">
-                                    Buy more credits
-                                </div>
-                                <div class="more_credits_item">
-                                    <div class="img_box">
-                                        <img class="more_credits_small" src="images/more_credits-small.svg" alt="#">
-                                    </div>
-                                    <span>100 credits</span>
-                                    <a class="purchase" href="#">Purchase for $5</a>
-                                </div>
-                                <div class="more_credits_item">
-                                    <div class="img_box">
-                                        <img class="more_credits_medium" src="images/more_credits-medium.svg" alt="#">
-                                    </div>
-                                    <span>200 credits</span>
-                                    <a class="purchase" href="#">Purchase for $10</a>
-                                </div>
-                                <div class="more_credits_item">
-                                    <div class="img_box">
-                                        <img class="more_credits_large" src="images/more_credits-large.svg" alt="#">
-                                    </div>
-                                    <span>450 credits</span>
-                                    <a class="purchase" href="#">Purchase for $20</a>
-                                </div>
-                            </div>
+                            <a class="overview_tools_item_btn" href="#">
+                                Use tool
+                            </a>
                         </div>
+
+                        <div class="overview_item overview_item_hover">
+                            <div class="overview_tools_item_inner">
+                                <img src="images/icon-coin-logo.svg" alt="#">
+                                <p>Credit balance:<span> 320</span></p>
+                            </div>
+                            <a class="overview_tools_item_btn" href="#">
+                                Buy more
+                            </a>
+                        </div>
+                        
+                        <div class="overview_item overview_item_hover">
+                            <div class="overview_tools_item_inner">
+                                <img class="overview_icon_black" src="images/icon-settings.svg" alt="#">
+                                <img class="overview_icon_white" src="images/icon-settings-white.svg" alt="#">
+                                <p>Account settings</p>
+                            </div>
+                            <a class="overview_tools_item_btn" href="#">
+                                Edit your account
+                            </a>
+                        </div>
+
+                        <div class="overview_item overview_item_hover">
+                            <div class="overview_tools_item_inner">
+                                <img class="overview_icon_black" src="images/icon-pen.svg" alt="#">
+                                <img class="overview_icon_white" src="images/icon-pen-white.svg" alt="#">
+                                <p>Tailored Content</p>
+                            </div>
+                            <a class="overview_tools_item_btn" href="#">
+                                Find out more
+                            </a>
+                        </div>
+
+                        <div class="overview_item overview_item_hover">
+                            <div class="overview_tools_item_inner">
+                                <img class="overview_icon_black" src="images/icon-box.svg" alt="#">
+                                <img class="overview_icon_white" src="images/icon-box-white.svg" alt="#">
+                                <p>Premade content</p>
+                            </div>
+                            <a class="overview_tools_item_btn" href="#">
+                                Find out more
+                            </a>
+                        </div>
+
+                        <div class="overview_item overview_item_hover">
+                            <div class="overview_tools_item_inner">
+                                <img class="overview_icon_black" src="images/icon-archive.svg" alt="#">
+                                <img class="overview_icon_white" src="images/icon-archive-white.svg" alt="#">
+                                <p>Request archive</p>
+                            </div>
+                            <a class="overview_tools_item_btn" href="#">
+                                See archive
+                            </a>
+                        </div>
+
+                        <div class="overview_item coming_soon coming_soon_for_remove">
+                            <img src="images/icon-lock.svg" alt="#">
+                            <p>Coming soon</p>
+                        </div>
+
+                        <div class="overview_item coming_soon">
+                            <img src="images/icon-lock.svg" alt="#">
+                            <p>Coming soon</p>
+                        </div>
+
                     </div>
                 </div>
             </section>
+
 
         </div>
 
