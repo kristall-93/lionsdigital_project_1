@@ -1841,6 +1841,10 @@
     }
 }
 @media (max-width: 740px) {
+    .tailored_content_select .jq-selectbox__select-text {
+        font-size: 24px;
+        line-height: 32px;
+    }
     .payment_content {
         margin-bottom: 29px;
     }
@@ -2020,7 +2024,7 @@
         max-width: 398px;
         margin-bottom: 25px;
     }
-    .overview_user_name_edit{
+    .overview_user_name_edit {
         margin-left: 33px;
     }
     .overview_item {
@@ -2180,6 +2184,51 @@
     }
 }
 @media (max-width: 620px) {
+    .tailored_content_title.checker_title {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 34px;
+    }
+    .tailored_content_form {
+        textarea{
+            margin-bottom: 15px;
+        }
+        input,
+        textarea {
+            padding: 18px 13px;
+        }
+    }
+    .tailored_content_select{
+        .jq-selectbox__select{
+            padding: 18px 13px;
+        }
+        .jq-selectbox__trigger {
+            display: none;
+        }
+    } 
+
+    .tailored_content_submit_btn {
+        order: 1;
+        margin-right: 0;
+        margin-left: 12px;
+        height: 68px;
+    }
+    .tailored_content_attach_btn {
+        height: 68px;
+        padding: 14px;
+    }
+
+    // .tailored_content_form{
+    //     input {
+    //     font-size: 22px;
+    //     line-height: 30px;
+
+    //     &::placeholder{
+    //         font-size: 22px;
+    //         line-height: 30px;
+    //     }
+    // }
+    // }
     .requests {
         margin-top: 23px;
         margin-bottom: 31px;

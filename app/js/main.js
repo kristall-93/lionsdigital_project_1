@@ -98,13 +98,7 @@ $(document).ready(function () {
         else {
             $("body, html").css('overflow-y', 'auto');
         }
-    });
-    // $(".menu_btn").click(function () {
-    //     $(".header_line").removeClass('hidden');
-    //     $(".header_line").addClass('active');
-    //     $("body, html").css('overflow', 'hidden');
-    //     return false;
-    // });   
+    });     
     $(document).mouseup(function (e) {
         var container_menu = $(".header_line");
         var container_menu_btn = $(".menu_btn");
@@ -125,7 +119,6 @@ $(document).ready(function () {
         $("body, html").css('overflow', 'hidden');
         return false;
     });
-
     $(document).mouseup(function (e) {
         var container = $(".sidebar");
         // if the target of the click isn't the container nor a descendant of the container
@@ -161,8 +154,6 @@ $(document).ready(function () {
         var width = 1;
         var id = setInterval(frame, 100);
         function frame() {
-            // checker_registered_text.innerHTML = '';
-            // checker_registered_text.placeholder = '';
             if (width >= 100) {
                 clearInterval(id);
                 progress_bar_start.innerHTML = 'Done (100 %)..';
@@ -180,15 +171,6 @@ $(document).ready(function () {
         $('.progress_bar').addClass('progress_bar_active');
         move_registered_check();
     });
-
-    //проверка наличия текста в textarea : неправильно работает
-    // $('.checker_reg_check_btn').on('click', function () {
-    //     if (document.getElementById("checker_registered_text").value != '') {
-    //         $('.progress_bar').addClass('progress_bar_active');
-    //         move_registered_check();
-    //     }
-    // });
-
 
     // переключение вкладок на settings page :
     $('.settings_tabs .tab').on('click', function(event) {
@@ -210,6 +192,7 @@ $(document).ready(function () {
         return false;
     });
 
+    // переключение 2х-шагового входа на setting page :
     $(".two_step_verify_btn").click(function () {
         if ($('.two_step_verify_btn').hasClass('active')) {
             $(".two_step_verify_btn").removeClass('active');
@@ -225,26 +208,11 @@ $(document).ready(function () {
         }
     });
 
+    
 
-    $('#grid').masonry({
-        // указываем элемент-контейнер в котором расположены блоки для динамической верстки
-        itemSelector: '.item',
-        // указываем класс элемента являющегося блоком в нашей сетке
-        singleMode: true,
-        // true - если у вас все блоки одинаковой ширины
-        isResizable: true,
-        // перестраивает блоки при изменении размеров окна
-        isAnimated: true,
-        // анимируем перестроение блоков
-        animationOptions: {
-            queue: false,
-            duration: 500
-        },
-        // опции анимации - очередь и продолжительность анимации
-        // fitWidth: true,
-        // columnWidth: 398 px,
-        // horizontalOrder: true,
-    });
+
+
+  
 
 
 });
