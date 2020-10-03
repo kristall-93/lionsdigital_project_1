@@ -165,7 +165,6 @@ $(document).ready(function () {
             }
         }
     }
-
     // запуск прогресс-бара в registered plagiarism checker :
     $('.checker_reg_check_btn').on('click', function () {
         $('.progress_bar').addClass('progress_bar_active');
@@ -208,7 +207,31 @@ $(document).ready(function () {
         }
     });
 
-    
+    // движение прогресс бара в popup на request premade content page :
+    function move_premade_content() {
+        var elem = document.getElementById("greenBar");
+        var percent = document.getElementById("percent");
+        var progress_bar_start = document.getElementById("progress_bar_start");
+        var progress_bar_text = document.getElementById("progress_bar_text");
+        var width = 1;
+        var id = setInterval(frame, 100);
+        function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+                // progress_bar_start.innerHTML = 'Done (100 %)..';
+                // progress_bar_text.innerHTML = 'Premade content is complete.';
+            } else {
+                width++;
+                elem.style.width = width + '%';
+                percent.innerHTML = width * 1;
+            }
+        }
+    }
+    // запуск прогресс-бара в popup на request premade content page :
+    $('.premade_content_submit_btn').on('click', function () {
+        $('.progress_bar').addClass('progress_bar_active');
+        move_premade_content();
+    });
 
 
 
