@@ -89,16 +89,20 @@ $(document).ready(function () {
     });
 
     // появление мобильного меню :
-
     $('.menu_btn').on('click', function () {
         $('.header_line').slideToggle();
-        if ($('.header_line').css('display', 'block')) {
+        if ($('.menu_btn').hasClass('closed')) {
+            $(".menu_btn").removeClass('closed');
+            $(".menu_btn").addClass('opened');
             $("body, html").css('overflow', 'hidden');
         }
         else {
+            $(".menu_btn").removeClass('opened');
+            $(".menu_btn").addClass('closed');
             $("body, html").css('overflow-y', 'auto');
         }
-    });     
+
+    });
     $(document).mouseup(function (e) {
         var container_menu = $(".header_line");
         var container_menu_btn = $(".menu_btn");
@@ -106,13 +110,14 @@ $(document).ready(function () {
         if (!container_menu.is(e.target) && container_menu.has(e.target).length === 0 && !container_menu_btn.is(e.target) && container_menu_btn.has(e.target).length === 0) {
             if ($('.header_line').css('display', 'block')) {
                 $('.header_line').css('display', 'none');
-            }
-            $("body, html").css('overflow-y', 'auto');
+            $(".menu_btn").removeClass('opened');
+            $(".menu_btn").addClass('closed');
+
+            }    
         }
     });
 
     // появление sidebar :
-
     $(".user").click(function () {
         $(".sidebar").removeClass('hidden');
         $(".sidebar").addClass('active');
@@ -172,7 +177,7 @@ $(document).ready(function () {
     });
 
     // переключение вкладок на settings page :
-    $('.settings_tabs .tab').on('click', function(event) {
+    $('.settings_tabs .tab').on('click', function (event) {
         var id = $(this).attr('data-id');
         $('.settings_tabs').find('.tab_item').removeClass('active_tab').hide();
         $('.settings_tabs .tabs').find('.tab').removeClass('active');
@@ -182,7 +187,7 @@ $(document).ready(function () {
     });
 
     // переключение вкладок на requests_list page :
-    $('.requests_tabs_wrapper .tab').on('click', function(event) {
+    $('.requests_tabs_wrapper .tab').on('click', function (event) {
         var id = $(this).attr('data-id');
         $('.requests_tabs_wrapper').find('.tab_item').removeClass('active_tab').hide();
         $('.requests_tabs_wrapper .tabs').find('.tab').removeClass('active');
@@ -199,7 +204,7 @@ $(document).ready(function () {
             $(".two_step_verify").removeClass('active');
             // $(".two_step_verify").innerHTML = 'Two-step verification off';
         }
-        else{
+        else {
             $(".two_step_verify_btn").addClass('active');
             // $(".two_step_verify_btn").innerHTML = 'TURN OFF';
             $(".two_step_verify").addClass('active');
@@ -235,7 +240,7 @@ $(document).ready(function () {
 
 
 
-  
+
 
 
 });

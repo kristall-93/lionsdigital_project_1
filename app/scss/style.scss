@@ -42,6 +42,25 @@
             margin-top: 8px;
         }
     }
+    img{
+        margin: 0 auto;
+    }
+    &.closed{
+        .menu_btn_line{
+            display: block;
+        }
+        img{
+            display: none;
+        }
+    }
+    &.opened{
+        .menu_btn_line{
+            display: none;
+        }
+        img{
+            display: block;
+        }
+    }
 }
 
 .top_bg_cloud {
