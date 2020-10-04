@@ -42,22 +42,22 @@
             margin-top: 8px;
         }
     }
-    img{
+    img {
         margin: 0 auto;
     }
-    &.closed{
-        .menu_btn_line{
+    &.closed {
+        .menu_btn_line {
             display: block;
         }
-        img{
+        img {
             display: none;
         }
     }
-    &.opened{
-        .menu_btn_line{
+    &.opened {
+        .menu_btn_line {
             display: none;
         }
-        img{
+        img {
             display: block;
         }
     }
@@ -4187,5 +4187,301 @@
 }
 
 // end premade content page - 1
+
+// start single article review page
+// with pupup
+
+.article_inner {
+    margin-top: 53px;
+    .more_features_item img {
+        width: 90px;
+        height: 94px;
+    }
+}
+.article_left {
+    position: relative;
+}
+.article_title_wrapper {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 26px;
+}
+.article_title {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    line-height: 47px;
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
+    img {
+        width: 34px;
+        height: 43px;
+        margin-right: 20px;
+    }
+}
+.article__author {
+    height: 32px;
+    margin-left: 14px;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.15px;
+    span {
+        font-weight: 700;
+    }
+}
+.article_text {
+    background: #ffffff;
+    box-shadow: 0px 22px 51px #b1bdda1a;
+    border: 1px solid #e4e6f2;
+    border-radius: 8px;
+    padding: 19px 21px;
+    height: 710px;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: 50px;
+    margin-bottom: 130px;
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
+}
+.article_bottom {
+    position: absolute;
+    right: -47px;
+    bottom: 5px;
+    width: 1148px;
+    height: 131px;
+    background: #ffffff;
+    box-shadow: 0px -6px 45px #b1bdda4f;
+    border: 1px solid #e4e6f2;
+    border-radius: 8px;
+    padding: 29px 46px;
+    text-align: right;
+    a:hover {
+        opacity: 0.8;
+    }
+}
+.article_bottom_inner {
+    width: 1046px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.article_bottom_btns_left{
+    display: flex;
+    align-items: center;
+    a:hover {
+        opacity: 0.7;
+    }
+}
+.article_bottom_btn_copy,
+.article_bottom_btn_load,
+.article_bottom_btn_back {
+    width: 73px;
+    height: 73px;
+    background: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.article_bottom_btn_copy,
+.article_bottom_btn_load {
+    display: none;
+}
+.article_bottom_btns_right {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 599px;
+    width: 100%;
+}
+.article_bottom_btn_accept,
+.article_bottom_btn_reject {
+    max-width: 287px;
+    width: 100%;
+    height: 73px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 26px;
+    line-height: 35px;
+    letter-spacing: 0.15px;
+    img {
+        margin-right: 23px;
+        height: 19px;
+    }
+}
+.article_bottom_btn_accept {
+    background: #f26065;
+}
+.article_bottom_btn_reject {
+    background: linear-gradient(180deg, #8fea93 0%, #6cc570 100%);
+    margin-left: 25px;
+}
+.article_feedback_popup,
+.thank_feedback_popup,
+.article_completed_popup {
+    max-width: 899px;
+    width: 100%;
+    overflow-x: hidden;
+    display: none;
+    background: #ffffff;
+    box-shadow: 0px 22px 51px #b1bdda29;
+    border: 1px solid #e4e6f2;
+    border-radius: 15px;
+    padding: 81px;
+    text-align: center;
+    textarea {
+        max-width: 501px;
+        width: 100%;
+        height: 183px;
+        background: #ffffff;
+        border: 1px solid #ced3ef;
+        border-radius: 10px;
+        resize: none;
+        padding: 18px 25px;
+        margin-bottom: 30px;
+        &::placeholder {
+            color: #3d3e4766;
+            letter-spacing: 0.15px;
+        }
+    }
+    .fancybox-button.fancybox-close-small {
+        display: none;
+    }
+}
+.feedback_popup_title {
+    max-width: 556px;
+    width: 100%;
+    font-size: 40px;
+    line-height: 53px;
+    letter-spacing: 0.45px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto 16px;
+}
+.popup_title_border {
+    width: 77px;
+    height: 4px;
+    background: #73cf74;
+    margin: 0 auto;
+    border-radius: 2px;
+    margin-bottom: 30px;
+}
+.feedback_popup_rate {
+    margin-bottom: 16px;
+}
+.feedback_popup_label {
+    max-width: 501px;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    color: #a2b1c3;
+    text-align: left;
+    margin: 0 auto 12px;
+}
+.feedback_submit {
+    width: 287px;
+    height: 80px;
+    background: linear-gradient(180deg, #88dd8c 0%, #6cc570 100%);
+    border-radius: 15px;
+    color: #ffffff;
+    border: none;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+.jq-ry-container {
+    margin: 0 auto;
+}
+.feedback_popup_text {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 31px;
+}
+.feedback_popup_back_btn {
+    max-width: 400px;
+    width: 100%;
+    height: 80px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #88dd8c 0%, #6cc570 100%);
+    border-radius: 15px;
+    margin: 0 auto;
+    img {
+        margin-right: 15px;
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+}
+.article_completed_popup {
+    position: relative;
+    // overflow-x: hidden;
+}
+.article_completed_title {
+    margin-top: 32px;
+}
+.article_popup_bg {
+    position: absolute;
+    top: 0;
+    max-width: 880px;
+    width: 100%;
+    margin-left: -75px;
+    margin-right: -70px;
+    img {
+        width: 100%;
+    }
+}
+.article_completed_text.feedback_popup_text {
+    margin-bottom: 20px;
+}
+.article_completed_btn.feedback_submit {
+    margin-bottom: 15px;
+}
+.feedback_later {
+    &:hover {
+        color: #73cf74;
+    }
+}
+
+// owned_article
+
+.article_bottom_owned {
+    display: none;
+}
+
+.owned_article {
+    .article_bottom_btn_copy,
+    .article_bottom_btn_load {
+        display: flex;
+    }
+    .article_bottom_owned {
+        display: block;
+        font-size: 19px;
+        line-height: 26px;
+        letter-spacing: 0.45px;
+        color: #75D179;
+        font-weight: 500;
+    }
+    .article_bottom_btn_accept,
+    .article_bottom_btn_reject{
+        display: none;
+    }
+}
+
+// end single article review page
+// with pupup
 
 @import "_media";

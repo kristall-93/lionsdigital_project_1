@@ -110,10 +110,10 @@ $(document).ready(function () {
         if (!container_menu.is(e.target) && container_menu.has(e.target).length === 0 && !container_menu_btn.is(e.target) && container_menu_btn.has(e.target).length === 0) {
             if ($('.header_line').css('display', 'block')) {
                 $('.header_line').css('display', 'none');
-            $(".menu_btn").removeClass('opened');
-            $(".menu_btn").addClass('closed');
+                $(".menu_btn").removeClass('opened');
+                $(".menu_btn").addClass('closed');
 
-            }    
+            }
         }
     });
 
@@ -238,9 +238,16 @@ $(document).ready(function () {
         move_premade_content();
     });
 
+    // "звездный рейтинг" в article_feedback_popup :
+    $("#rateYo").rateYo({
+        starWidth: "39px",
+        spacing: "9px",
+        normalFill: "#E3E6F1",
+        ratedFill: "#F6E266",        
+        starSvg: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>'
+    });
 
-
-
+    
 
 
 });
