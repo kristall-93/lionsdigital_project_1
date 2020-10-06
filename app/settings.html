@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Plagiat website">
+    <title>Plagiarized</title>
+    <link rel="shortcut icon" href="images/results-popup-logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="settings_page">
+    <div class="wrapper">
+        <div class="page_content">
+
+            <header class="header_result header_setting">
+                <div class="container">
+                    <div class="header_inner">
+                        <a class="header_logo">
+                            <img src="images/logo.png" alt="#">
+                        </a>
+                        <div class="header_line">
+                            <a class="user" href="#">
+                                Hello, John
+                            </a>
+                        </div>
+                        <div class="menu_btn closed">
+                            <div class="menu_btn_line"></div>
+                            <div class="menu_btn_line"></div>
+                            <div class="menu_btn_line"></div>
+                            <img src="images/menu-btn-opened.svg" alt="#">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="settings">
+                <div class="container">
+                    <h1 class="settings_title">
+                        Account settings
+                    </h1>
+                    <p class="settings_text">
+                        Change your profile and account settings.
+                    </p>
+                    <div class="settings_tabs">
+
+                        <div class="tabs">
+                            <div class="tab active" data-id="1">
+                                <div class="tab_icon_box">
+                                    <img class="icon_tab_green" src="images/icon-account-green.svg" alt="#">
+                                    <img class="icon_tab_grey" src="images/icon-account-grey.svg" alt="#">
+                                </div>
+                                <span>Account</span>
+                            </div>
+                            <div class="tab" data-id="2">
+                                <div class="tab_icon_box">
+                                    <img class="icon_tab_green" src="images/icon-secure-green.svg" alt="#">
+                                    <img class="icon_tab_grey" src="images/icon-secure-grey.svg" alt="#">
+                                </div>
+                                <span>Security</span>
+                            </div>
+                            <div class="tab" data-id="3">
+                                <div class="tab_icon_box">
+                                    <img class="icon_tab_green" src="images/icon-notify-green.svg" alt="#">
+                                    <img class="icon_tab_grey" src="images/icon-notify-grey.svg" alt="#">
+                                </div>
+                                <span>Notification</span>
+                            </div>
+                            <div class="tab" data-id="4">
+                                <div class="tab_icon_box">
+                                    <img class="icon_tab_green" src="images/icon-card-green.svg" alt="#">
+                                    <img class="icon_tab_grey" src="images/icon-card-grey.svg" alt="#">
+                                </div>
+                                <span>Payment</span>
+                            </div>
+                        </div>
+
+                        <div class="tab_content">
+                            <div class="tab_item active_tab tab_item_account" id="1">
+                                <h2 class="tab_item_title">
+                                    General info
+                                </h2>
+                                <div class="tab_account_inner">
+                                    <div class="tab_account_img">
+                                        <img src="images/user-img-setting.png" alt="#">
+                                    </div>
+                                    <div class="tab_account_content">
+                                        <div class="tab_account_content_inner">
+                                            <div class="tab_account_content_col">
+                                                <label>FIRST NAME</label>
+                                                <input type="text" placeholder="John" required>
+                                                <label>CITY/COUNTRY</label>
+                                                <select class="select_style select_settings">
+                                                    <option>Subotica, Serbia</option>
+                                                    <option>Subotica, Serbia</option>
+                                                </select>
+                                                <label>USERNAME</label>
+                                                <input type="text" placeholder="johnsmith44" required>
+                                            </div>
+                                            <div class="tab_account_content_col">
+                                                <label>LAST NAME</label>
+                                                <input type="text" placeholder="Smith" required>
+                                                <label>BIRTH DATE</label>
+                                                <select class="select_style select_settings">
+                                                    <option>16-01-1991</option>
+                                                    <option>16-01-1991</option>
+                                                </select>
+                                                <label>EMAIL</label>
+                                                <input type="text" placeholder="johnsmith@email.com" required>
+                                            </div>
+                                            <div class="tab_account_content_col">
+                                                <label>Address</label>
+                                                <input type="text" placeholder="Main Road 55 BB" required>
+                                                <label>GENDER</label>
+                                                <select class="select_style select_settings">
+                                                    <option>Male</option>
+                                                    <option>Male</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <a class="tab_account_btn" href="#">
+                                            Save
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab_item tab_item_secure" id="2">
+                                <h2 class="tab_item_title">
+                                    Security
+                                </h2>
+                                <div class="tab_secure_inner">
+                                    <div class="tab_secure_content_col">
+                                        <label>CURRENT PASSWORD</label>
+                                        <input type="text" placeholder="" required>
+                                        <label>NEW PASSWORD</label>
+                                        <input type="text" placeholder="" required>
+                                        <label>CONFIRM NEW PASSWORD</label>
+                                        <input type="text" placeholder="" required>
+                                    </div>
+                                    <div class="tab_secure_col_verify">
+                                        <h6 class="tab_secure_verify_title">
+                                            Two-Step Verification
+                                        </h6>
+                                        <p class="tab_secure_verify_text">
+                                            Protect your account with two-step verification.
+                                            Each time you sign in to your Plagiarized account,
+                                            you'll need your password and a verification code.
+                                        </p>
+                                        <a class="learn_more_verify" href="#">
+                                            <img src="images/icon-attention.svg" alt="#">
+                                            <span>Learn more about two-step verification</span>
+                                        </a>
+                                        <div class="two_step_verify">
+                                            <img class="icon_power_red" src="images/icon-power-red.svg" alt="#">
+                                            <img class="icon_power_green" src="images/icon-power-green.svg" alt="#">
+                                            <span>Two-step verification off</span>
+                                            <a class="two_step_verify_btn" href="#">
+                                                TURN ON
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="tab_account_btn" href="#">
+                                    Save
+                                </a>
+                            </div>
+
+                            <div class="tab_item tab_item_notifications" id="3">
+                                Notifications settings content
+                            </div>
+
+                            <div class="tab_item" id="4">
+                                <h2 class="tab_item_title tab_payment_title">
+                                    Payment info
+                                </h2>
+                                <p class="tab_item_text">
+                                    Set up your payment informations.
+                                </p>
+                                <div class="tab_payment_inner">
+                                    <div class="tab_payment_card_col">
+                                        <div class="tab_payment_card">
+                                            <label>YOUR CARDS</label>
+                                            <img class="card_img" src="images/card.svg" alt="#">
+                                        </div>
+                                        <a class="tab_payment_card_add" href="#">
+                                            <img src="images/card-add-new.svg" alt="#">
+                                        </a>
+                                    </div>
+                                    <div class="tab_payment_date_col">
+                                        <label>NAME ON CARD</label>
+                                        <input type="text" placeholder="John Smith" required>
+                                        <label>CARD NUMBER</label>
+                                        <input type="text" placeholder="5535 - 7251 - 2852 - 2296" required>
+                                        <div class="card_date_cvv_wrapper">
+                                            <div class="card_date">
+                                                <label>EXPIRATION DATE</label>
+                                                <div class="select_date_wrapper">
+                                                    <select class="select_style select_date">
+                                                        <option>03/12</option>
+                                                        <option>03/12</option>
+                                                    </select>
+                                                    <select class="select_style select_date">
+                                                        <option>03/12</option>
+                                                        <option>03/12</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="card_cvv">
+                                                <label>CVV</label>
+                                                <select class="select_style select_cvv">
+                                                    <option>03/12</option>
+                                                    <option>03/12</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <a class="tab_account_btn" href="#">
+                                            Save
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_inner">
+                    <div class="footer_item footer_item_social">
+                        <div class="footer_item_social_inner">
+                            <div class="footer_site">
+                                <img src="images/logo-black.svg" alt="#">
+                                <a class="footer_site_link" href="#">plagiarized.ai</a>
+                            </div>
+                            <ul class="footer_social_list">
+                                <li class="social-list__item">
+                                    <a href="#">
+                                        <img src="images/facebook.svg" alt="#">
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="#">
+                                        <img src="images/twitter.svg" alt="#">
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="#">
+                                        <img src="images/linledin.svg" alt="#">
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="#">
+                                        <img src="images/pinterest.svg" alt="#">
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="footer_item footer_item_links">
+                        <h6 class="footer_item_title">
+                            Links
+                        </h6>
+                        <ul class="footer_item_list">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#">Download</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Service</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_item footer_item_support">
+                        <h6 class="footer_item_title">
+                            Support
+                        </h6>
+                        <ul class="footer_item_list">
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">How it Works</a>
+                            </li>
+                            <li>
+                                <a href="#">Features</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#">Reporting</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_item footer_item_contact">
+                        <h6 class="footer_item_title">
+                            Contact Us
+                        </h6>
+                        <ul>
+                            <li>
+                                <a href="tel:+38166345678">
+                                    +381 66345678
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer_item_mail" href="mailto:office@plagiarized.com">
+                                    office@plagiarized.com
+                                </a>
+                            </li>
+                            <li>
+                                <span>Novi Sad City</span>
+                            </li>
+                            <li>
+                                <a class="footer_contact_add" href="#">Contact</a>
+                            </li>
+                            <li>
+                                <a class="footer_contact_add" href="#">Reporting</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="footer_bottom_line">
+                        <div class="copyright">
+                            Copyright plagiarized.ai 2020
+                        </div>
+                        <div class="footer_bottom_right">
+                            <a href="#">
+                                Terms of use
+                            </a>
+                            <a href="#">
+                                Privacy Policy
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer_bg_head">
+                        <img src="images/footer-bg-head.png" alt="#">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+    <div class="sidebar sidebar_logged_in">
+        <div class="sidebar_container">
+            <a class="sidebar_logo" href="#">
+                <img src="images/logo.png" alt="#">
+            </a>
+            <a class="user_box" href="#">
+                <div class="user_img">
+                    <img src="images/user-img.png" alt="#">
+                </div>
+                <div class="user_box_info">
+                    <div class="user_name">
+                        John Smith
+                    </div>
+                    <div class="user_status">
+                        Regular member
+                    </div>
+                </div>
+            </a>
+            <a class="user_credits" href="#">
+                <img src="images/coin.png" alt="#">
+                <span>Credits: 240</span>
+            </a>
+            <ul class="user_menu">
+                <li>
+                    <a href="#">
+                        <img src="images/icon-user-menu-1.svg" alt="#">
+                        Overview
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icon-user-menu-2.svg" alt="#">
+                        Plagiarism Checker
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icon-user-menu-3.svg" alt="#">
+                        Tailored Content
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icon-user-menu-4.svg" alt="#">
+                        Premade Content
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icon-user-menu-5.svg" alt="#">
+                        Account Settings
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icon-user-menu-6.svg" alt="#">
+                        Requests
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icon-user-menu-7.svg" alt="#">
+                        Support
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icon-user-menu-8.svg" alt="#">
+                        Log Out
+                    </a>
+                </li>
+            </ul>
+            <div class="upgrate_box_wrapper">
+                <div class="upgrate_box">
+                    <img src="images/logo-head.png" alt="#">
+                    <div class="upgrate_box_inner">
+                        <div class="upgrate_box_title">
+                            Upgrade to Premium
+                        </div>
+                        <div class="upgrate_box_text">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod…
+                        </div>
+                        <a class="upgrate_box_btn" href="#">
+                            Upgrade now
+                        </a>
+                    </div>
+                    <div class="upgrate_box_bg">
+                        P
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="notify notify_learn_more notify_active">
+        
+        <div class="notify_top">
+            <div class="circle_icon_logo">
+                <img src="images/icon-logo-small.svg" alt="#">
+            </div>
+            <a href="#">plagiarized.ai</a>
+            <span>Today | 06:25 PM</span>
+        </div>
+        <div class="notify_learn_title">
+            Upsell opportunity notification title goes here.
+        </div>
+        <div class="notify_text">
+            The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox
+            whelps. Bawds jog, flick…
+        </div>
+        <div class="notify_learn_btns">
+            <a href="#" class="notify_learn_more_btn">Learn more</a>
+
+            <a href="#" class="notify_dismiss">Dismiss</a>
+        </div>
+        <div class="notification_close">
+            <img src="images/close-circle-black.svg" alt="#">
+        </div>
+        <div class="notify_learn_border"></div>
+    </div> -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

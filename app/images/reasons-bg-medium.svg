@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="450.945" height="441.677" viewBox="0 0 450.945 441.677">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6cc570"/>
+      <stop offset="1" stop-color="#59b35d"/>
+    </linearGradient>
+    <filter id="Rectangle_Copy_3" x="70.611" y="0" width="380.333" height="441.677" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="25.5" result="blur"/>
+      <feFlood flood-color="#0d3c8b" flood-opacity="0.071"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Сгруппировать_837" data-name="Сгруппировать 837" transform="translate(76.604 -1108.694)">
+    <path id="Контур_3004" data-name="Контур 3004" d="M37.871,1.105s40.272,6.921,74.247,3.724,76.344-6.648,101.126-3.724S276.4,8.426,315.568,55.991s57.818,66.945,57.818,66.945S408.5,159.016,408.1,198.986s-20.385,67.95-62.354,85.937-104.723-2.4-125.508,0-35.974-4.1-97.129,21.084-123.11-6-123.11-6V1.105Z" transform="translate(-76.604 1161.726)" fill="url(#linear-gradient)"/>
+    <g id="Card_3" data-name="Card 3" transform="translate(70.507 1175.194)">
+      <g transform="matrix(1, 0, 0, 1, -147.11, -66.5)" filter="url(#Rectangle_Copy_3)">
+        <path id="Rectangle_Copy_3-2" data-name="Rectangle Copy 3" d="M13.307,0H214.026c7.349,0,13.307,6.462,13.307,14.434V274.243c0,7.972-5.958,14.434-13.307,14.434H13.307C5.958,288.677,0,282.215,0,274.243V14.434C0,6.462,5.958,0,13.307,0Z" transform="translate(147.11 66.5)" fill="#fff"/>
+      </g>
+      <g id="Group_13" data-name="Group 13" transform="translate(12.648 26.834)">
+        <g id="Сгруппировать_35" data-name="Сгруппировать 35" transform="translate(0 196.891)">
+          <g id="Money_Icon_Icon_1" data-name="Money Icon/Icon 1" style="isolation: isolate">
+            <rect id="Rectangle" width="38.49" height="38.49" rx="19.245" fill="rgba(6,16,88,0.14)" opacity="0.5"/>
+          </g>
+          <rect id="Прямоугольник_24" data-name="Прямоугольник 24" width="53.668" height="10.255" rx="5.127" transform="translate(45.019 2.739)" fill="#f7f7fa"/>
+          <rect id="Прямоугольник_25" data-name="Прямоугольник 25" width="79.667" height="18.459" rx="9.229" transform="translate(45.019 17.096)" fill="rgba(6,16,88,0.14)"/>
+          <rect id="Прямоугольник_1706" data-name="Прямоугольник 1706" width="56.565" height="18.459" rx="9.229" transform="translate(127.958 17.096)" fill="#f7f7fa"/>
+        </g>
+        <g id="Earning_LI" data-name="Earning LI" transform="translate(0 0)">
+          <g id="Money_Icon_Icon_1-2" data-name="Money Icon/Icon 1" transform="translate(0 41.126)" style="isolation: isolate">
+            <rect id="Rectangle-2" data-name="Rectangle" width="38.49" height="38.49" rx="19.245" fill="rgba(6,16,88,0.14)" opacity="0.5"/>
+          </g>
+          <rect id="Rectangle-3" data-name="Rectangle" width="208.088" height="0.601" transform="translate(0 98.26)" fill="#b4b7cc" opacity="0.4"/>
+          <rect id="Прямоугольник_21" data-name="Прямоугольник 21" width="207.834" height="15.041" rx="7.52" transform="translate(0.239)" fill="rgba(194,198,218,0.14)"/>
+          <rect id="Прямоугольник_22" data-name="Прямоугольник 22" width="59.137" height="10.255" rx="5.127" transform="translate(45.019 43.755)" fill="rgba(6,16,88,0.14)"/>
+          <rect id="Прямоугольник_23" data-name="Прямоугольник 23" width="139.126" height="18.459" rx="9.229" transform="translate(45.019 58.453)" fill="rgba(194,198,218,0.14)"/>
+        </g>
+        <g id="Earning_LI_Copy" data-name="Earning LI Copy" transform="translate(0 119.309)">
+          <g id="Сгруппировать_34" data-name="Сгруппировать 34">
+            <g id="Money_Icon_Icon_1-3" data-name="Money Icon/Icon 1" style="isolation: isolate">
+              <rect id="Rectangle-4" data-name="Rectangle" width="38.49" height="38.49" rx="19.245" fill="rgba(6,16,88,0.14)" opacity="0.5"/>
+            </g>
+            <rect id="Прямоугольник_24-2" data-name="Прямоугольник 24" width="53.417" height="10.255" rx="5.127" transform="translate(45.019 2.725)" fill="rgba(6,16,88,0.14)"/>
+            <rect id="Прямоугольник_25-2" data-name="Прямоугольник 25" width="139.126" height="18.801" rx="9.4" transform="translate(45.019 17.082)" fill="rgba(6,16,88,0.14)"/>
+            <rect id="Прямоугольник_1705" data-name="Прямоугольник 1705" width="80.306" height="10.255" rx="5.127" transform="translate(103.997 2.725)" fill="#f7f7fa"/>
+          </g>
+          <rect id="Rectangle-5" data-name="Rectangle" width="208.088" height="0.601" transform="translate(0 56.533)" fill="#b4b7cc" opacity="0.4"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Plagiat website">
+    <title>Plagiarized</title>
+    <link rel="shortcut icon" href="images/results-popup-logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <section class="top">
+        <div class="container">
+            <header class="header">
+                <img class="top_bg_cloud" src="images/top-bg-cloud.svg" alt="#">
+                <div class="header_logo">
+                    <img src="images/logo.png" alt="#">
+                </div>
+                <div class="header_line">
+                    <nav class="menu">
+                        <ul class="menu_list">
+                            <li class="active_page">
+                                <a href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Pricing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Plagiarism Checker
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Credits
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- <a class="sign_up_btn" href="#">
+                        Sign up
+                    </a> -->
+                    <a class="user" href="#">
+                        Hello, John
+                    </a>
+                </div>
+                <div class="menu_btn closed">
+                    <div class="menu_btn_line"></div>
+                    <div class="menu_btn_line"></div>
+                    <div class="menu_btn_line"></div>
+                    <img src="images/menu-btn-opened.svg" alt="#">
+                </div>
+            </header>
+            <div class="top__inner">
+                <div class="plagiarism_checker">
+                    <h2 class="plagiarism_checker_title">
+                        plagiarism checker
+                    </h2>
+                    <p class="plagiarism_checker_text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam
+                    </p>
+                    <div class="checker_text_wrapper">
+                        <textarea class="checker_text" id="checker_text"
+                            placeholder="Place text or upload your file here to check for plagiarism."
+                            required></textarea>
+                        <span class="checker_text_count">50 words remaining</span>
+                        <!-- <span class="checker_text_count checker_text_count_active checker_text_count_red">0 words remaining</span> -->
+                        <div class="progress_bar">
+                            <p class="progress_bar_start" id="progress_bar_start">
+                                Starting the search (<span id="percent">1</span>) %..
+                            </p>
+                            <div id="greyProgress">
+                                <div id="greenBar"></div>
+                            </div>
+                            <p id="progress_bar_text">
+                                It may take a few minutes for in-depth search of your entry...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="plagiarism_checker_btns">
+                        <a class="upload_file_btn" href="#">
+                            <img src="images/icon-upload.svg" alt="#">
+                            <span>Upload file</span>
+                        </a>
+                        <a class="check_btn check_btn_active" data-fancybox data-src="#modal" href="javascript:;">
+                            <div class="check_btn_inner">
+                                <img src="images/icon-search.svg" alt="#">
+                                <span>Check for plagiarism</span>
+                            </div>
+                        </a>
+                        <a class="check_continue_btn" data-fancybox data-src="#modal-1" href="javascript:;">
+                            Yes, I will continue for free
+                        </a>
+                    </div>
+                </div>
+                <div class="form_slider">
+                    <div class="slider_item">
+                        <div class="slider_item_top">
+                        </div>
+                        <div class="slider_item_bottom">
+                            <h6 class="slider_item_title">
+                                Get full access
+                            </h6>
+                            <form>
+                                <input type="text" placeholder="Email address" required>
+                                <button type="submit">Sign up</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="slider_item">
+                        <div class="slider_item_top">
+                        </div>
+                        <div class="slider_item_bottom">
+                            <h6 class="slider_item_title">
+                                Get full access
+                            </h6>
+                            <form>
+                                <input type="text" placeholder="Email address" required>
+                                <button type="submit">Sign up</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="slider_item">
+                        <div class="slider_item_top">
+                        </div>
+                        <div class="slider_item_bottom">
+                            <h6 class="slider_item_title">
+                                Get full access
+                            </h6>
+                            <form>
+                                <input type="text" placeholder="Email address" required>
+                                <button type="submit">Sign up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="units_line">
+        <div class="units_line_bg"></div>
+        <div class="container">
+            <div class="units_line_wrapper">
+                <div class="unit">
+                    <img src="images/unit-1.svg" alt="#">
+                    <p class="unit_text">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore…
+                    </p>
+                </div>
+                <div class="unit">
+                    <img src="images/unit-2.svg" alt="#">
+                    <p class="unit_text">
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                        was born and I will give you a complete account of the system, and…
+                    </p>
+                </div>
+                <div class="unit">
+                    <img src="images/unit-3.svg" alt="#">
+                    <p class="unit_text">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore…
+                    </p>
+                </div>
+                <div class="unit">
+                    <img src="images/unit-4.svg" alt="#">
+                    <p class="unit_text">
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                        was born and I will give you a complete account of the system, and…
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reason">
+        <div class="container">
+            <h2 class="reason_title">
+                Why Use a Plagiarism Checker?
+            </h2>
+            <div class="reason_inner">
+                <div class="reason_bg">
+                    <img class="reason_bg_large" src="images/reasons-bg.png" alt="#">
+                    <img class="reason_bg_medium" src="images/reasons-bg-medium.svg" alt="#">
+                </div>
+                <div class="reason_items">
+                    <div class="reason_item">
+                        <div class="reason_item_img reason_item_img-1"></div>
+                        <div class="reason_item_box">
+                            <div class="reason_item_title">
+                                Lorem ipsum dolor sit amet
+                            </div>
+                            <div class="reason_item_text">
+                                But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+                                pain was born and I will give you a complete account of the system, and expound the
+                                actual
+                                teachings of the great explorer of the truth, the…
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reason_item">
+                        <div class="reason_item_img reason_item_img-2"></div>
+                        <div class="reason_item_box">
+                            <div class="reason_item_title">
+                                Lorem ipsum dolor sit amet
+                            </div>
+                            <div class="reason_item_text">
+                                But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+                                pain was born and I will give you a complete account of the system, and expound the
+                                actual
+                                teachings of the great explorer of the truth, the…
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reason_item">
+                        <div class="reason_item_img reason_item_img-3"></div>
+                        <div class="reason_item_box">
+                            <div class="reason_item_title">
+                                Lorem ipsum dolor sit amet
+                            </div>
+                            <div class="reason_item_text">
+                                But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+                                pain was born and I will give you a complete account of the system, and expound the
+                                actual
+                                teachings of the great explorer of the truth, the…
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="powerful_engine">
+        <div class="container">
+            <div class="powerful_engine_inner">
+                <h2 class="powerful_engine_title">
+                    powerful engine behind checker
+                </h2>
+                <h3 class="engine_title">
+                    What exactly makes us so unique on the market?
+                </h3>
+                <p class="engine_text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                    et
+                    ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit. amet. Lorem
+                    ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                    et
+                    dolore magna aliquyam erat, sed diam voluptua.
+                </p>
+                <p class="engine_text">
+                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                    sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                    vero
+                    eos et accusam et justo duo dolores et ea rebum.
+                </p>
+                <div class="engine_bg">
+                    <img src="images/engine-bg.png" alt="#">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2 class="services_title">
+                our services
+            </h2>
+            <div class="services_inner">
+                <div class="services_item">
+                    <img src="images/services-1.svg" alt="#">
+                    <h6 class="services_item_title">
+                        plagiarism check
+                    </h6>
+                    <p class="services_item_text">
+                        With contextual analysis, word placement, and our smart algorithms, checking your writing has
+                        never been easier
+                    </p>
+                </div>
+                <div class="services_item">
+                    <img src="images/services-2.svg" alt="#">
+                    <h6 class="services_item_title">
+                        tailored content
+                    </h6>
+                    <p class="services_item_text">
+                        With contextual analysis, word placement, and our smart algorithms, checking your writing has
+                        never been easier
+                    </p>
+                </div>
+                <div class="services_item">
+                    <img src="images/services-3.svg" alt="#">
+                    <h6 class="services_item_title">
+                        premade content
+                    </h6>
+                    <p class="services_item_text">
+                        With contextual analysis, word placement, and our smart algorithms, checking your writing has
+                        never been easier
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="plans">
+        <div class="container">
+            <h2 class="plans_title">
+                Purchase premium plans
+            </h2>
+            <p class="plans_text">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam eirmod tempor invidunt ut labore et dolore magna.
+            </p>
+            <div class="plans_inner">
+                <div class="plans_item">
+                    <span class="sale_label">
+                        -20% OFF
+                    </span>
+                    <p class="plans_price plans_price_free">
+                        Free
+                    </p>
+                    <h5 class="plans_name">
+                        Basic
+                    </h5>
+                    <p class="plans_for">
+                        For low budget, individual accounts
+                    </p>
+                    <ul class="plans_description">
+                        <li class="plans_description_active">
+                            The quick, brown fox
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit
+                        </li>
+                        <li>
+                            Customer support
+                        </li>
+                        <li>
+                            Copyright removal
+                        </li>
+                        <li>
+                            Email support
+                        </li>
+                    </ul>
+                    <a class="plans_btn" href="#">
+                        Get Started
+                    </a>
+                </div>
+
+                <div class="plans_item plans_item_sale">
+                    <span class="sale_label">
+                        -20% OFF
+                    </span>
+                    <p class="plans_price">
+                        35
+                    </p>
+                    <h5 class="plans_name">
+                        Tailored Content
+                    </h5>
+                    <p class="plans_for">
+                        For medium budget projects
+                    </p>
+                    <ul class="plans_description">
+                        <li class="plans_description_active">
+                            The quick, brown fox
+                        </li>
+                        <li class="plans_description_active">
+                            Lorem ipsum dolor sit
+                        </li>
+                        <li class="plans_description_active">
+                            Customer support
+                        </li>
+                        <li class="plans_description_active">
+                            Copyright removal
+                        </li>
+                        <li>
+                            Email support
+                        </li>
+                    </ul>
+                    <a class="plans_btn plans_btn_active" href="#">
+                        Get Started
+                    </a>
+                </div>
+
+                <div class="plans_item">
+                    <span class="sale_label">
+                        -20% OFF
+                    </span>
+                    <p class="plans_price">
+                        75
+                    </p>
+                    <h5 class="plans_name">
+                        Premade Content
+                    </h5>
+                    <p class="plans_for">
+                        High budget companies and entrepreneurs
+                    </p>
+                    <ul class="plans_description">
+                        <li class="plans_description_active">
+                            The quick, brown fox
+                        </li>
+                        <li class="plans_description_active">
+                            Lorem ipsum dolor sit
+                        </li>
+                        <li class="plans_description_active">
+                            Customer support
+                        </li>
+                        <li class="plans_description_active">
+                            Copyright removal
+                        </li>
+                        <li class="plans_description_active">
+                            Email support
+                        </li>
+                    </ul>
+                    <a class="plans_btn" href="#">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="credits">
+        <div class="container">
+            <div class="credits_inner">
+                <div class="credits_img">
+                    <img src="images/money.svg" alt="#">
+                </div>
+                <div class="credits_info">
+                    <h2 class="credits_title">
+                        Stock up on Credits
+                    </h2>
+                    <p class="credits_text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren. Lorem ipsum dolor sit amet, consetetur
+                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                        erat, sed diam voluptua. At vero
+                    </p>
+                    <a class="credits_buy_btn" href="#">
+                        Buy credits
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clients">
+        <div class="container">
+            <div class="clients_title">
+                Trusted by students and faculty
+            </div>
+            <div class="clients_slider">
+                <div class="clients_slider_item">
+                    <img src="images/clients-logo-1.svg" alt="#">
+                </div>
+                <div class="clients_slider_item">
+                    <img src="images/clients-logo-2.svg" alt="#">
+                </div>
+                <div class="clients_slider_item">
+                    <img src="images/clients-logo-3.svg" alt="#">
+                </div>
+                <div class="clients_slider_item">
+                    <img src="images/clients-logo-4.svg" alt="#">
+                </div>
+                <div class="clients_slider_item">
+                    <img src="images/clients-logo-5.svg" alt="#">
+                </div>
+                <div class="clients_slider_item">
+                    <img src="images/clients-logo-1.svg" alt="#">
+                </div>
+                <div class="clients_slider_item">
+                    <img src="images/clients-logo-2.svg" alt="#">
+                </div>
+                <div class="clients_slider_item">
+                    <img src="images/clients-logo-3.svg" alt="#">
+                </div>
+                <div class="clients_slider_item">
+                    <img src="images/clients-logo-4.svg" alt="#">
+                </div>
+                <div class="clients_slider_item">
+                    <img src="images/clients-logo-5.svg" alt="#">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="app">
+        <div class="container">
+            <div class="app_load">
+                <h2 class="app_load_title">
+                    Download our app from Play Store
+                </h2>
+                <p class="app_load_text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                    et ea rebum. Stet clita kasd gubergren….
+                </p>
+                <div class="app_load_btn_wrapper">
+                    <a class="app_load_btn" href="#">
+                        <img src="images/google-play.svg" alt="#">
+                    </a>
+                </div>
+                <div class="app_phone_img">
+                    <div class="app_phone_box">
+                        <img src="images/logo-head.png" alt="#">
+                        <span>plagiarized.ai</span>
+                    </div>
+                </div>
+                <div class="footer_bg_cloud">
+                    <img src="images/footer-bg-cloud.png" alt="#">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_inner">
+                <div class="footer_item footer_item_social">
+                    <div class="footer_item_social_inner">
+                        <div class="footer_site">
+                            <img src="images/logo-black.svg" alt="#">
+                            <a class="footer_site_link" href="#">plagiarized.ai</a>
+                        </div>
+                        <ul class="footer_social_list">
+                            <li class="social-list__item">
+                                <a href="#">
+                                    <img src="images/facebook.svg" alt="#">
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="#">
+                                    <img src="images/twitter.svg" alt="#">
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="#">
+                                    <img src="images/linledin.svg" alt="#">
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="#">
+                                    <img src="images/pinterest.svg" alt="#">
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="footer_item footer_item_links">
+                    <h6 class="footer_item_title">
+                        Links
+                    </h6>
+                    <ul class="footer_item_list">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#">Download</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Service</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_item footer_item_support">
+                    <h6 class="footer_item_title">
+                        Support
+                    </h6>
+                    <ul class="footer_item_list">
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">How it Works</a>
+                        </li>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">Reporting</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_item footer_item_contact">
+                    <h6 class="footer_item_title">
+                        Contact Us
+                    </h6>
+                    <ul>
+                        <li>
+                            <a href="tel:+38166345678">
+                                +381 66345678
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer_item_mail" href="mailto:office@plagiarized.com">
+                                office@plagiarized.com
+                            </a>
+                        </li>
+                        <li>
+                            <span>Novi Sad City</span>
+                        </li>
+                        <li>
+                            <a class="footer_contact_add" href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a class="footer_contact_add" href="#">Reporting</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="footer_bottom_line">
+                    <div class="copyright">
+                        Copyright plagiarized.ai 2020
+                    </div>
+                    <div class="footer_bottom_right">
+                        <a href="#">
+                            Terms of use
+                        </a>
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                    </div>
+                </div>
+                <div class="footer_bg_head">
+                    <img src="images/footer-bg-head.png" alt="#">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="login__wrapper" id="modal">
+        <div>
+            <div class="login__title">
+                Log In
+            </div>
+            <div class="login__title_border"></div>
+            <form>
+                <input class="login__email" type="text" placeholder="Email address" required>
+                <input class="login__pass" type="text" placeholder="Password" required>
+                <a class="lost_pass" href="#">Forgot password?</a>
+                <button class="login_btn" type="submit">Log in</button>
+                <a class="creat_acc" href="#">Not a member? Create a new account.</a>
+                <a class="continue_free" href="#">
+                    <span>Continue for free</span>
+                </a>
+            </form>
+        </div>
+    </div>
+
+    <div class="results_ready_wrapper" id="modal-1">
+        <div class="results_ready">
+            <div>
+                <img src="images/results-popup-logo.png" alt="#">
+                <div class="results_ready_title">
+                    Your results are ready.
+                </div>
+                <div class="results_ready_text">
+                    Search results are ready and just one step away from you. Continue for free?
+                </div>
+                <a class="results_continue" href="#">
+                    Yes, I will continue for free
+                </a>
+                <a class="results_login" href="#">
+                    Log in
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="notify notify_learn_more notify_active">
+        <!-- class="notify_active" -->
+        <div class="notify_top">
+            <div class="circle_icon_logo">
+                <img src="images/icon-logo-small.svg" alt="#">
+            </div>
+            <a href="#">plagiarized.ai</a>
+            <span>Today | 06:25 PM</span>
+        </div>
+        <div class="notify_learn_title">
+            Upsell opportunity notification title goes here.
+        </div>
+        <div class="notify_text">
+            The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox
+            whelps. Bawds jog, flick…
+        </div>
+        <div class="notify_learn_btns">
+            <a href="#" class="notify_learn_more_btn">Learn more</a>
+
+            <a href="#" class="notify_dismiss">Dismiss</a>
+        </div>
+        <div class="notification_close">
+            <img src="images/close-circle-black.svg" alt="#">
+        </div>
+        <div class="notify_learn_border"></div>
+    </div>
+
+
+
+
+    <div class="sidebar sidebar_logged_in">
+        <div class="sidebar_container">
+            <a class="sidebar_logo" href="#">
+                <img src="images/logo.png" alt="#">
+            </a>
+            <a class="user_box" href="#">
+                <div class="user_img">
+                    <img src="images/user-img.png" alt="#">
+                </div>
+                <div class="user_box_info">
+                    <div class="user_name">
+                        John Smith
+                    </div>
+                    <div class="user_status">
+                        Regular member
+                    </div>
+                </div>
+            </a>
+            <a class="user_credits" href="#">
+                <img src="images/coin.png" alt="#">
+                <span>Credits: 240</span>
+            </a>
+            <ul class="user_menu">
+                <li>
+                    <a href="#">
+                        <img src="images/icon-user-menu-1.svg" alt="#">
+                        Overview
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icon-user-menu-2.svg" alt="#">
+                        Plagiarism Checker
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icon-user-menu-3.svg" alt="#">
+                        Tailored Content
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icon-user-menu-4.svg" alt="#">
+                        Premade Content
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icon-user-menu-5.svg" alt="#">
+                        Account Settings
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icon-user-menu-6.svg" alt="#">
+                        Requests
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icon-user-menu-7.svg" alt="#">
+                        Support
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icon-user-menu-8.svg" alt="#">
+                        Log Out
+                    </a>
+                </li>
+            </ul>
+            <div class="upgrate_box_wrapper">
+                <div class="upgrate_box">
+                    <img src="images/logo-head.png" alt="#">
+                    <div class="upgrate_box_inner">
+                        <div class="upgrate_box_title">
+                            Upgrade to Premium
+                        </div>
+                        <div class="upgrate_box_text">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod…
+                        </div>
+                        <a class="upgrate_box_btn" href="#">
+                            Upgrade now
+                        </a>
+                    </div>
+                    <div class="upgrate_box_bg">
+                        P
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
