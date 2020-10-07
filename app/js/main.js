@@ -44,6 +44,9 @@ $(document).ready(function () {
         infinite: false,
         arrows: false,
     });
+    $('.first_login_slider_next').click(function () {
+        $("#first_login_slider").slick('slickNext');
+    });
 
 
     // Закрытие попапа и запуск прогресс-бара на landing page в plagiarism_checker :
@@ -200,15 +203,15 @@ $(document).ready(function () {
     $(".two_step_verify_btn").click(function () {
         if ($('.two_step_verify_btn').hasClass('active')) {
             $(".two_step_verify_btn").removeClass('active');
-            // $(".two_step_verify_btn").innerHTML = 'TURN ON';
+            document.getElementById("two_step_verify_btn").textContent = 'TURN ON';
             $(".two_step_verify").removeClass('active');
-            // $(".two_step_verify").innerHTML = 'Two-step verification off';
+            document.getElementById("two_step_verify_text").textContent = 'Two-step verification off';
         }
         else {
             $(".two_step_verify_btn").addClass('active');
-            // $(".two_step_verify_btn").innerHTML = 'TURN OFF';
+            document.getElementById("two_step_verify_btn").textContent = 'TURN OFF';
             $(".two_step_verify").addClass('active');
-            // $(".two_step_verify").innerHTML = 'Two-step verification on';
+            document.getElementById("two_step_verify_text").textContent = 'Two-step verification on';
         }
     });
 
@@ -243,7 +246,7 @@ $(document).ready(function () {
         starWidth: "39px",
         spacing: "9px",
         normalFill: "#E3E6F1",
-        ratedFill: "#F2EC2F",        
+        ratedFill: "#F2EC2F",
         starSvg: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>'
     });
 
@@ -254,11 +257,11 @@ $(document).ready(function () {
         rating: 4.1,
         readOnly: true,
         normalFill: "#D6DAE7",
-        ratedFill: "#F2EC2F",   
+        ratedFill: "#F2EC2F",
         starSvg: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>'
     });
 
-    
+
 
 
 });

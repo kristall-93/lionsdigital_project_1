@@ -8,11 +8,12 @@
 .top {
     padding-top: 24px;
     // background: #6cc570;
-    background-image: url(../images/top-bg-1.jpg);
+    background-image: url(../images/top-bg-1.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center -30px;
     padding-bottom: 180px;
+    margin-bottom: -32px;
     z-index: 1;
 }
 .header {
@@ -1009,7 +1010,7 @@
 .footer {
     color: #ffffff;
     padding: 79px 0 52px;
-    background-image: url(../images/footer-bg.jpg);
+    background-image: url(../images/footer-bg.svg);
     background-size: cover;
     overflow: hidden;
     a:hover {
@@ -2488,7 +2489,7 @@
     padding-bottom: 180px;
 }
 .first_login_slider {
-    max-width: 483px;
+    max-width: 515px;
     width: 100%;
     margin-bottom: 35px;
     margin: 0 auto;
@@ -2499,13 +2500,17 @@
             margin-right: 15px;
         }
     }
+    // .slick-slide{
+    //     width: 100%;
+    // }
 }
 .first_login_item {
-    max-width: 483px;
+    max-width: 515px;
     width: 100%;
     text-align: center;
     img {
         width: 242px;
+        height: 250px;
         margin: 0 auto 10px;
     }
     .login_btn {
@@ -2523,9 +2528,10 @@
 }
 .first_login_item_text {
     letter-spacing: 0.15px;
-    margin-bottom: 16px;
     max-width: 466px;
     width: 100%;
+    text-align: center;
+    margin: 0 auto 16px;
     height: 97px;
     overflow: hidden;
 }
@@ -3426,10 +3432,6 @@
     margin-top: 45px;
     margin-bottom: 60px;
 }
-// .requests_title {
-// }
-// .requests_text {
-// }
 .tabs.requests_tabs {
     display: flex;
     width: 100%;
@@ -3607,8 +3609,6 @@
         border: none;
     }
 }
-// .pagination_arrow_prev {
-// }
 .pagination_arrow_next {
     img {
         transform: rotate(180deg);
@@ -4058,6 +4058,42 @@
     top: 31px;
     right: 31px;
 }
+// categories_popup :
+.categories_popup.article_feedback_popup {
+    .fancybox-button.fancybox-close-small {
+        display: block;
+        color: transparent;
+        background-image: url(../images/notify-close-black.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 31px;
+        right: 31px;
+    }
+}
+.categories_popup_title.feedback_popup_title {
+    margin-bottom: 10px;
+}
+.categories_popup_list {
+    text-align: center;
+    li {
+        font-size: 25px;
+        line-height: 33px;
+        letter-spacing: 0.45px;
+        a {
+            width: 100%;
+            &:hover {
+                color: #75d179;
+            }
+        }
+    }
+    li + li {
+        margin-top: 20px;
+    }
+}
 
 // end premade content page
 
@@ -4313,10 +4349,10 @@
     }
 }
 .article_bottom_btn_accept {
-    background: #f26065;
+    background: linear-gradient(180deg, #8fea93 0%, #6cc570 100%);
 }
 .article_bottom_btn_reject {
-    background: linear-gradient(180deg, #8fea93 0%, #6cc570 100%);
+    background: #f26065;
     margin-left: 25px;
 }
 .article_feedback_popup,
@@ -4486,7 +4522,7 @@
 // start writer profile page
 
 .writer {
-    .writer_title{
+    .writer_title {
         margin-top: 45px;
     }
     .overview_user {
@@ -4497,7 +4533,7 @@
         padding: 40px 65px 32px;
         text-align: center;
     }
-    .overview_user_name{
+    .overview_user_name {
         margin-bottom: 18px;
         display: block;
     }
@@ -4510,7 +4546,7 @@
     display: flex;
     justify-content: space-between;
 }
-.writer_reviews_title{
+.writer_reviews_title {
     font-family: "Rubik", sans-serif;
     font-weight: 500;
     font-size: 22px;
@@ -4536,7 +4572,7 @@
         color: #3d3e47;
     }
 }
-.writer_reviews_count{
+.writer_reviews_count {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
@@ -4547,7 +4583,7 @@
     max-width: 1226px;
     width: 100%;
     height: 770px;
-    box-shadow: 0px 22px 51px #B1BDDA1A;
+    box-shadow: 0px 22px 51px #b1bdda1a;
     overflow-y: scroll;
     scrollbar-width: 50px;
     &::-webkit-scrollbar {

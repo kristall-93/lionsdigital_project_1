@@ -3251,6 +3251,7 @@
     }
     .first_login_item img {
         width: 165px;
+        height: 170px;
         margin: 0 auto 13px;
     }
     .first_login_item_title {
@@ -3820,6 +3821,9 @@
     .results_content {
         margin-bottom: -70px;
     }
+    .results_content_inner {
+        justify-content: center;
+    }
 }
 @media (min-width: 1300px) and (max-width: 2000px) {
     .purchase_credits .container {
@@ -3936,7 +3940,6 @@
     .premade_content_inner .checker_content_inner {
         justify-content: center;
     }
-
     .overview_item {
         max-width: 100%;
     }
@@ -3947,4 +3950,35 @@
         left: 50%;
         transform: translateX(-50%);
     }
+}
+@media (min-width: 1300px) and (max-width: 2000px) {
+    .writer_profile .container {
+        padding: 0 70px;
+        transform: scale(0.8);
+        max-width: initial;
+        padding: 0;
+    }
+    .writer_profile .writer .container {
+        transform-origin: top;
+    }
+    .writer_profile .writer {
+        margin-bottom: -70px;
+    }
+    .writer_list{
+        max-width: initial
+    }
+}
+@media (min-width: 1300px) and (max-width: 2000px) {
+    .single_article .container {
+        padding: 0 70px;
+        transform: scale(0.8);
+        max-width: initial;
+        padding: 0;
+    }
+    .single_article .article .container {
+        transform-origin: top;
+    }
+    .single_article .article {
+        margin-bottom: -70px;
+    }   
 }
